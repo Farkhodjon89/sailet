@@ -1,0 +1,60 @@
+.rightMenu {
+  position: fixed;
+  right: -10%;
+  z-index: 99;
+  top: 45%;
+  transform: rotate(90deg) translate(0, -100%);
+
+  .menuList {
+    display: flex;
+
+    .menuItem {
+      position: relative;
+
+      &:not(:last-child) {
+        padding: 0 40px 0 0;
+      }
+
+      &:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        width: 42px;
+        height: 42px;
+        background: url('../../public/rhombus.svg') center/100% auto no-repeat;
+      }
+
+      .menuLink {
+        text-transform: uppercase;
+        opacity: 60%;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #fff;
+      }
+      .activeLink{
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #fff;
+      }
+    }
+
+
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  .rightMenu {
+    display: none;
+  }
+
+}
