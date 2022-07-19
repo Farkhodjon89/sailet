@@ -7,7 +7,7 @@ import Navbar from "../NavigationBar/Navbar";
 const Collaboration = ({}) => {
 
   return (
-      <section className={s.collaboration} id='page2'>
+      <section className={s.collaboration}>
         <div className="container">
           <div className={s.collaborationContainer}>
             <div className={s.content}>

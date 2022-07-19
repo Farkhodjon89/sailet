@@ -2,7 +2,7 @@
   width: 100%;
   background: url('../../public/creativity-background.png') no-repeat center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   &::before {
@@ -22,7 +22,7 @@
   .creativityContainer {
     z-index: 99;
     position: relative;
-
+    margin-top: 5%;
     width: 100%;
     //margin-left: 67px;
 
@@ -32,6 +32,7 @@
 
       .leftSide {
         width: 452px;
+
       }
 
       .rightSide {
@@ -54,6 +55,14 @@
   .rightSide {
     width: 100% !important;
     text-align: center;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .slideText {
+    font-size: 14px !important;
+    line-height: 19px !important;
   }
 
 }
