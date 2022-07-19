@@ -20,7 +20,7 @@ const Kindness = () => {
               <div className={s.dragonAbout}>
                 <h2 className={s.title}>Kindness</h2>
                 <p className={s.text}>
-                  Kindness was often seen as a weakness. But we don't think so. Kindness is a fundamental trait that was
+                  Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was
                   uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other
                   like answering questions, guiding newcomers, and being responsible and proactive. It is something much
                   bigger, it is a true belief, belief in people around you, belief in things that others carry about.

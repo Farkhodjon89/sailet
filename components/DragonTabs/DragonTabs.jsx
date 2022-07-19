@@ -17,7 +17,7 @@ const DragonTabs = () => {
               <h3 className={s.itemTitle}>Kindness 2</h3>
               <div className={open.includes(1) ? s.itemDetails : s.hidden}>
                 <p className={s.text}>
-                  Kindness was often seen as a weakness. But we don't think so. Kindness is a fundamental trait that was
+                  Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was
                   uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other
                   like answering questions, guiding newcomers, and being responsible and proactive. It is something much
                   bigger, it is a true belief, belief in people around you, belief in things that others carry about.
@@ -41,7 +41,7 @@ const DragonTabs = () => {
               <h3 className={s.itemTitle}>Kindness 3</h3>
               <div className={open.includes(2) ? s.itemDetails : s.hidden}>
                 <p className={s.text}>
-                  Kindness was often seen as a weakness. But we don't think so. Kindness is a fundamental trait that was
+                  Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was
                   uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other
                   like answering questions, guiding newcomers, and being responsible and proactive. It is something much
                   bigger, it is a true belief, belief in people around you, belief in things that others carry about.
@@ -62,7 +62,7 @@ const DragonTabs = () => {
               <h3 className={s.itemTitle}>Kindness 4</h3>
               <div className={open.includes(3) ? s.itemDetails : s.hidden}>
                 <p className={s.text}>
-                  Kindness was often seen as a weakness. But we don't think so. Kindness is a fundamental trait that was
+                  Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was
                   uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other
                   like answering questions, guiding newcomers, and being responsible and proactive. It is something much
                   bigger, it is a true belief, belief in people around you, belief in things that others carry about.
