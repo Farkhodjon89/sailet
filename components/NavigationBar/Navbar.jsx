@@ -6,7 +6,7 @@ import {Link} from "react-scroll";
 
 const Navbar = () => {
   const [element, setElement] = useState(null)
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(null)
 
   useEffect(() => {
     setElement(document.getElementById("portal"))

@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+
 html,
 body {
   padding: 0;
@@ -43,6 +44,7 @@ ul li {
   padding: 0 15px;
   //border: 2px solid red;
   min-height: 100%;
+
   &.fix {
     display: flex;
     align-items: center;
@@ -67,6 +69,59 @@ ul li {
 }
 
 .swiper-button-prev::after,
-.swiper-button-next::after{
+.swiper-button-next::after {
   display: none;
 }
+
+.fp-watermark{
+  display: none !important;
+}
+
+#fp-nav {
+  position: fixed !important;
+  right: 5% !important;
+  z-index: 99 !important;
+}
+
+#fp-nav ul li a {
+  text-transform: uppercase;
+  opacity: 60%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+}
+
+
+#fp-nav ul li a span {
+  &::after {
+    content: 'Page2';
+    position: absolute;
+
+  }
+
+}
+
+#fp-nav ul li a span:last-child {
+  background-color: transparent;
+
+}
+
+#fp-nav ul li {
+  transform: rotate(90deg);
+  padding: 50px 0 50px 0 !important;
+  position: relative;
+
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    margin-left: 70px;
+    top: 35%;
+    width: 42px;
+    height: 42px;
+    background: url('/rhombus.svg') center/100% auto no-repeat;
+  }
+}
+
