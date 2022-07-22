@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 import Image from 'next/image';
 import _ from 'lodash';
 import classnames from 'classnames'
-import ReactFullpage from "@fullpage/react-fullpage";
 
 const DragonTabs = ({dragons}) => {
   const [open, setOpen] = useState([])

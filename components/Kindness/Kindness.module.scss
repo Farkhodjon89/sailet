@@ -2,7 +2,8 @@
   background-color: #000;
   position: relative;
   padding: 140px 0 200px;
-
+  min-height: 100vh;
+  overflow: hidden;
   .ellips1 {
     background: rgba(1, 133, 255, 0.9);
     filter: blur(1200px);

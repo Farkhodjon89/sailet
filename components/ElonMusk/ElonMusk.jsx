@@ -3,7 +3,7 @@ import s from './ElonMusk.module.scss'
 
 const ElonMusk = () => {
   return (
-      <section className={s.elonMusk}>
+      <section className={s.elonMusk} id="page6">
         <div className={s.ellips1}></div>
         <div className={s.ellips2}></div>
         <div className={s.ellips3}></div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import s from './Creativity.module.scss'
 import Image from 'next/image';
@@ -12,6 +12,9 @@ import Button from "../Button/Button";
 SwiperCore.use([Pagination, Navigation])
 
 const Creativity = () => {
+
+  const swiperNavPrevRef = useRef(null)
+  const swiperNavNextRef = useRef(null)
 
   const slides = []
 
@@ -46,9 +49,17 @@ const Creativity = () => {
                     slidesPerView={1}
                     loop
                     className={s.mySwiper}
+                    onInit={(swiper) => {
+                      swiper.params.navigation.prevEl = swiperNavPrevRef.current
+                      swiper.params.navigation.nextEl = swiperNavNextRef.current
+                      swiper.navigation.init()
+                      swiper.navigation.update()
+                    }}
                 >
                   {slides}
                 </Swiper>
+                <div className={s.swiperNavPrevRef} ref={swiperNavPrevRef}></div>
+                <div className={s.swiperNavNextRef} ref={swiperNavNextRef}></div>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@
   min-height: 100vh;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: '';

@@ -19,7 +19,7 @@ const Collaboration = ({}) => {
                 growth. With your participation and help, our opportunities in this field are just infinite
               </p>
               <Button text="Participate"/>
-              {/*<Navbar/>*/}
+              <Navbar/>
             </div>
           </div>
         </div>

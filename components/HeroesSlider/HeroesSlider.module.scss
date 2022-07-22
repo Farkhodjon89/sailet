@@ -1,0 +1,75 @@
+.swiperWrapper {
+  display: none;
+  width: 100%;
+  text-align: center;
+
+
+  .heroName {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    left: 0;
+    width: 100%;
+    background: rgba(12, 19, 51, 0.5);
+    backdrop-filter: blur(25px);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .swiperWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.swiperNavPrevRef {
+  background-image: url('../../public/arrowLeft.svg');
+  left: 20%;
+  @media (max-width: 767.98px) {
+    left: 5%;
+
+  }
+}
+
+.swiperNavNextRef {
+  background-image: url('../../public/arrowRight.svg');
+  right: 20%;
+  @media (max-width: 767.98px) {
+    right: 5%;
+
+  }
+}
+
+.swiperNavPrevRef,
+.swiperNavNextRef {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (max-width: 767.98px) {
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+}

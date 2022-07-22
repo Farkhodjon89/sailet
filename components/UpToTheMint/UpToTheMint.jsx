@@ -34,7 +34,7 @@ const UpToTheMint = () => {
           }}
       >
         <SwiperSlide>
-          <section className={s.upToTheMintNight}>
+          <section className={s.upToTheMintNight} id="page5">
             <div className="container">
               <div className={s.upToTheMintContainer}>
                 <SectionTitle title='Up to the mint'/>

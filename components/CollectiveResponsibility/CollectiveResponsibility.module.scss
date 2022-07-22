@@ -3,6 +3,8 @@
   position: relative;
   background: url("../../public/responsibilityBg.png") no-repeat center;
   background-size: cover;
+  //min-height: 100vh;
+  overflow: hidden;
 
 
   &::before {
@@ -81,10 +83,14 @@
         position: relative;
         margin-bottom: 24px;
 
+        &:hover .heroIcon {
+          display: block;
+        }
+
         .heroImage {
 
           &:hover {
-            opacity: 30%;
+            opacity: 60%;
           }
         }
 
@@ -113,7 +119,7 @@
         }
 
         .heroIcon {
-          opacity: 0;
+          display: none;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -128,4 +134,15 @@
 
     }
   }
+}
+
+@media (max-width: 991.98px) {
+  .heroesList {
+    display: none !important;
+  }
+
+  .collectiveResponsibilityContainer {
+    background: unset !important;
+  }
+
 }

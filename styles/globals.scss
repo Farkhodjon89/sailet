@@ -52,20 +52,28 @@ ul li {
   }
 }
 
-.swiper-button-prev {
-  background-image: url('../public/arrowLeft.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  left: 50% !important;;
-}
+//.swiper-button-prev {
+//  background-image: url('../public/arrowLeft.svg');
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  background-position: center;
+//  left: 50% !important;
+//
+//
+//
+//}
+//
+//.swiper-button-next {
+//  background-image: url('../public/arrowRight.svg');
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  background-position: center;
+//  left: 96%;
+//}
 
-.swiper-button-next {
-  background-image: url('../public/arrowRight.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  left: 96%;
+.swiper {
+  margin-left: unset !important;
+  margin-right: unset !important;
 }
 
 .swiper-button-prev::after,
@@ -97,11 +105,11 @@ ul li {
   color: #fff;
 }
 
-#fp-nav ul li:last-child  {
-   display: none;
+#fp-nav ul li:last-child {
+  display: none;
 
 
- }
+}
 
 
 #fp-nav ul li a span {
@@ -138,6 +146,7 @@ ul li {
     position: absolute;
   }
 }
+
 #fp-nav ul li:nth-of-type(6) a span {
   &::after {
     content: 'Page7';
@@ -175,7 +184,20 @@ ul li {
   #fp-nav {
     display: none;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 80% !important;
+  }
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+  .swiper-button-next {
+    right: 0 !important;
+  }
 
 
 }
+
+
 

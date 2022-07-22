@@ -1,9 +1,11 @@
 .upToTheMintNight {
   background: url("../../public/deerBackground.png") no-repeat center;
   min-height: 100vh;
+  padding: 125px 0;
   width: 100%;
   background-size: cover;
   position: relative;
+
 
   &::before {
     content: '';
@@ -30,22 +32,19 @@
     .contentNight {
       background: url("../../public/scrollNight.png") no-repeat center;
       background-size: contain;
-      position: absolute;
-      top: 120px;
-      left: 50%;
-      transform: translate(-50%, 0);
       cursor: pointer;
       z-index: 10;
+      margin-top: 40px;
       width: 100%;
       height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .contentText {
         max-width: 320px;
         padding-left: 0;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+
 
         li h4 {
           font-size: 20px;
@@ -72,6 +71,7 @@
   background: url("../../public/castleBackground.png") no-repeat center;
   min-height: 100vh;
   width: 100%;
+  padding: 125px 0;
   background-size: cover;
   position: relative;
 
@@ -100,22 +100,18 @@
     .contentDay {
       background: url("../../public/scrollDay.png") no-repeat center;
       background-size: contain;
-      position: absolute;
-      top: 120px;
-      left: 50%;
       z-index: 10;
-      transform: translate(-50%, 0);
       width: 100%;
+      margin-top: 40px;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 80vh;
 
       .contentText {
         max-width: 320px;
-        position: absolute;
         padding-left: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
         li h4 {
           font-size: 24px;

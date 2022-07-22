@@ -3,7 +3,7 @@ import s from './Kindness.module.scss';
 import Image from "next/image";
 import Button from "../Button/Button";
 import DragonTabs from "../DragonTabs/DragonTabs";
-import {dragonsData} from '../../dragonsData';
+import { dragonsData } from '../../dragonsData';
 
 const Kindness = () => {
 
@@ -31,6 +31,7 @@ const Kindness = () => {
               </div>
             </div>
             <DragonTabs dragons={dragonsData}/>
+            
           </div>
         </div>
       </section>
