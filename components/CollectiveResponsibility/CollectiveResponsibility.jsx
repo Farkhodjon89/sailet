@@ -4,12 +4,16 @@ import Image from 'next/image';
 import s from './CollectiveResponsibility.module.scss'
 import classnames from "classnames";
 import _ from 'lodash';
+import HeroItem from "../HeroItem/HeroItem";
 
 const CollectiveResponsibility = () => {
-
+  const [activeCard, setActiveCard] = useState(null)
   const [visible, setVisible] = useState([])
 
-  // console.log(heroes)
+
+  console.log(activeCard)
+
+
   return (
       <section className={s.collectiveResponsibility} id="page4">
         <div className={s.ellips1}></div>
@@ -22,6 +26,7 @@ const CollectiveResponsibility = () => {
               {heroes.map(({id, name, img}) => (
                   <li key={id} className={s.heroItem}>
                     <div className={s.heroImage}
+                         onClick={() => setActiveCard(id)}
                          onMouseLeave={() => setVisible(_.xor(visible, [id]))}
                          onMouseEnter={() => setVisible(_.xor(visible, [id]))}
                     >
@@ -31,12 +36,13 @@ const CollectiveResponsibility = () => {
                       <Image src='/eye.svg' width={100} height={50} quality={100} alt='Eye'/>
                     </div>
                     <div className={s.heroName}>{name}</div>
+                    {activeCard && <HeroItem id={id} name={name} img={img} hero={activeCard} setHero={setActiveCard}/>}
                   </li>
               ))}
             </ul>
+
           </div>
         </div>
-
       </section>
   );
 };

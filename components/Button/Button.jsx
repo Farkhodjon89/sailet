@@ -8,7 +8,7 @@ const Button = ({text}) => {
         <Link href='/'>
           <a>
             <div className={s.button}>
-              Participate
+              {text}
             </div>
           </a>
         </Link>

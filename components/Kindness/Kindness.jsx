@@ -27,7 +27,7 @@ const Kindness = () => {
                   like answering questions, guiding newcomers, and being responsible and proactive. It is something much
                   bigger, it is a true belief, belief in people around you, belief in things that others carry about.
                 </p>
-                <Button/>
+                <Button text='Participate'/>
               </div>
             </div>
             <DragonTabs dragons={dragonsData}/>

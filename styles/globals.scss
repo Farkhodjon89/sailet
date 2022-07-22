@@ -57,7 +57,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  right: 10px !important;
+  left: 50% !important;;
 }
 
 .swiper-button-next {
@@ -65,7 +65,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  right: 60px !important;
+  left: 96%;
 }
 
 .swiper-button-prev::after,
@@ -73,8 +73,12 @@ ul li {
   display: none;
 }
 
-.fp-watermark{
+.fp-watermark {
   display: none !important;
+}
+
+.row-direction {
+  flex-direction: row !important;
 }
 
 #fp-nav {
@@ -93,14 +97,56 @@ ul li {
   color: #fff;
 }
 
+#fp-nav ul li:last-child  {
+   display: none;
+
+
+ }
+
 
 #fp-nav ul li a span {
   &::after {
     content: 'Page2';
     position: absolute;
-
   }
+}
 
+#fp-nav ul li:nth-of-type(2) a span {
+  &::after {
+    content: 'Page3';
+    position: absolute;
+  }
+}
+
+#fp-nav ul li:nth-of-type(3) a span {
+  &::after {
+    content: 'Page4';
+    position: absolute;
+  }
+}
+
+#fp-nav ul li:nth-of-type(4) a span {
+  &::after {
+    content: 'Page5';
+    position: absolute;
+  }
+}
+
+#fp-nav ul li:nth-of-type(5) a span {
+  &::after {
+    content: 'Page6';
+    position: absolute;
+  }
+}
+#fp-nav ul li:nth-of-type(6) a span {
+  &::after {
+    content: 'Page7';
+    position: absolute;
+  }
+}
+
+#fp-nav ul li a.active span {
+  margin: 0 0 0 0 !important;
 }
 
 #fp-nav ul li a span:last-child {
@@ -123,5 +169,13 @@ ul li {
     height: 42px;
     background: url('/rhombus.svg') center/100% auto no-repeat;
   }
+}
+
+@media screen and (max-width: 991.98px) {
+  #fp-nav {
+    display: none;
+  }
+
+
 }
 

@@ -38,13 +38,19 @@
       .rightSide {
         overflow: hidden;
         width: calc(100% - 452px - 140px);
+        padding: 0 30px;
 
         .mySwiper {
           width: 100%;
+          position: static !important;
         }
       }
     }
   }
+}
+
+.swiper {
+  position: static !important;
 }
 
 @media (max-width: 991.98px) {

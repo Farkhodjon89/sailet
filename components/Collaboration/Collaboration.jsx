@@ -18,7 +18,7 @@ const Collaboration = ({}) => {
                 we can go even further by collaborating. One of our most vital principles is sustainable and rapid
                 growth. With your participation and help, our opportunities in this field are just infinite
               </p>
-              <Button/>
+              <Button text="Participate"/>
               {/*<Navbar/>*/}
             </div>
           </div>

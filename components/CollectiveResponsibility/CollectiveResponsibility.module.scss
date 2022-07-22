@@ -72,7 +72,8 @@
     .heroesList {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      padding: 120px 0;
+      padding: 120px 30px;
+      position: relative;
 
       .heroItem {
         cursor: pointer;
@@ -80,8 +81,8 @@
         position: relative;
         margin-bottom: 24px;
 
-
         .heroImage {
+
           &:hover {
             opacity: 30%;
           }
@@ -107,7 +108,11 @@
           color: #FFFFFF;
         }
 
-        .heroIcon{
+        .hidden {
+          display: none;
+        }
+
+        .heroIcon {
           opacity: 0;
           position: absolute;
           top: 50%;
@@ -116,11 +121,9 @@
 
         }
 
-        .visible{
+        .visible {
           opacity: 1;
         }
-
-
       }
 
     }

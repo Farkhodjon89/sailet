@@ -19,7 +19,7 @@ const DragonTabs = ({dragons}) => {
                   <h3 className={s.itemTitle}>{title}</h3>
                   <div className={open.includes(id) ? s.itemDetails : s.hidden}>
                     <p className={s.text}>{text}</p>
-                    <Button/>
+                    <Button text='Participate'/>
                   </div>
                 </div>
                 <div className={s.itemImage}>

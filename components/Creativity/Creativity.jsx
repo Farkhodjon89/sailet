@@ -25,7 +25,7 @@ const Creativity = () => {
             can grow collective creativity and bring value to our start-up. Let’s become a team to build the
             biggest brand and let’s make sure to do It as a collective, to do it as a community!
           </p>
-          <Button/>
+          <Button text="Participate"/>
         </SwiperSlide>
     )
   }
