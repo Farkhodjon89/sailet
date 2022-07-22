@@ -21,7 +21,7 @@ const HeroItem = ({hero, setHero, img, id, name}) => {
           </div>
           <div className={s.heroContent}>
             <h4 className={s.title}>{name}</h4>
-            <p>Let's have each other accountable for every success or failure. We want to build a community where people
+            <p>Let&apos;s have each other accountable for every success or failure. We want to build a community where people
               realize the real value of their involvement and how important are their ideas, help and confidence in our
               success, not to mention the desire to be a part of Weya. We will hear out each and everyone who has
               something to say. </p>
