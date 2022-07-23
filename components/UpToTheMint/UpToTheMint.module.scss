@@ -133,6 +133,27 @@
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .upToTheMintDay,
+  .upToTheMintNight {
+    padding: 60px 0 100px 0;
+  }
+
+  .contentText{
+    max-width: 260px !important;
+    h4 {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+
+    p{
+      font-size: 10px !important;
+
+    }
+  }
+
+}
+
 .swiperNavPrevRef {
   background-image: url('../../public/arrowLeft.svg');
   left: 20%;

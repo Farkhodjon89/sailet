@@ -39,6 +39,7 @@
       display: flex;
       flex-direction: column;
       max-width: 520px;
+
       .text {
         color: #fff;
         font-size: 16px;
@@ -82,8 +83,6 @@
       line-height: 24px !important;
     }
   }
-  .itemImage {
-  }
 
   .tabsActive {
     margin: 0 15px 40px 15px !important;
@@ -93,10 +92,12 @@
 @media (max-width: 575.98px) {
   .dragonItem {
     margin: 0 30px 40px 30px !important;
-  }
-
-  .dragonItem {
     padding: 30px 30px !important;
+    position: relative;
+
+    &:nth-child(2) .itemImage {
+      left: 0;
+    }
   }
 
   .dragonTabs {
@@ -106,12 +107,14 @@
   .itemImage {
     width: 100px;
     height: 100px;
+    position: absolute;
+    right: 0;
   }
 
   .tabsActive {
     margin: 0 15px 40px 15px !important;
   }
-  .itemContent{
+  .itemContent {
     font-size: 14px !important;
     line-height: 14px !important;
   }

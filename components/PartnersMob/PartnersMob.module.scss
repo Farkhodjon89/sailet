@@ -1,0 +1,30 @@
+.partnersMobWrapper {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: none;
+  padding-left: 0 !important;
+
+  .swiperSlide {
+    max-width: 150px;
+    margin-bottom: 25px;
+    width: 50%;
+    height: 84px;
+    background: linear-gradient(336.28deg, #8733F3 2.95%, #B700E5 90.95%);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 30px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .partnersMobWrapper{
+    display: flex !important;
+  }
+
+}

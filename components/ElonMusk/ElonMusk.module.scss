@@ -1,8 +1,9 @@
 .elonMusk {
   background-color: #000;
   position: relative;
-  padding: 170px 0;
+  padding: 170px 0 390px 0;
   min-height: 100vh;
+
 
   .ellips1 {
     background: rgba(1, 133, 255, 0.9);
@@ -33,4 +34,122 @@
     right: -368px;
     bottom: -240px;
   }
+
+  .elonMuskContainer {
+    background: url("../../public/ElonMuskBackground.png") no-repeat center;
+    background-size: contain;
+    padding-top: 90px;
+    height: 486px;
+    z-index: 6;
+    position: relative;
+    width: 100%;
+
+    .images {
+      width: 300vw;
+      height: 100%;
+      display: flex;
+      transition: all 1s ease-in-out;
+
+      .image {
+        width: 100%;
+        display: flex;
+
+        .personWrapper {
+          display: flex;
+        }
+
+
+        .title,
+        .text {
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          color: #FFFFFF;
+        }
+
+        .title {
+          font-size: 56px;
+        }
+
+        .text {
+          font-size: 21px;
+          max-width: 488px;
+        }
+
+        .activeImage {
+          margin-right: 68px;
+
+        }
+      }
+    }
+
+    .arrowContainer {
+      position: absolute;
+      top: 80%;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 991.98px) {
+  .image {
+    flex-direction: column !important;
+  }
+
+  .elonMusk {
+    padding: 35px 0 35px 0 !important;
+
+    .elonMuskContainer {
+      padding-top: 0px !important;
+      background: unset;
+    }
+
+    .title {
+      font-size: 36px !important;
+      line-height: 36px !important;
+
+
+    }
+
+    .text {
+      font-size: 14px !important;
+      line-height: 14px !important;
+      max-width: 300px !important;
+
+    }
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .title {
+    margin-top: 20px !important;
+  }
+  .text {
+    margin-top: 20px !important;
+  }
+
+  .personWrapper {
+    display: flex !important;
+
+
+    .person {
+      width: 130px !important;
+      height: 160px !important;
+    }
+
+  }
+  .activeImage {
+    width: 270px !important;
+    height: 330px !important;
+
+  }
+
+
 }

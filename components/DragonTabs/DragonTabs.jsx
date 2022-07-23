@@ -21,7 +21,7 @@ const DragonTabs = ({dragons}) => {
                     <Button text='Participate'/>
                   </div>
                 </div>
-                <div className={s.itemImage}>
+                <div className={ s.itemImage}>
                   <Image alt='Dragon' src={img}
                          width={open.includes(id) ? 430 : 230}
                          height={open.includes(id) ? 468 : 250} priority

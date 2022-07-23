@@ -9,14 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.26",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "18.2.0",
-    "react-page-scroller": "^2.2.1",
     "react-scroll": "^1.8.7",
     "sass": "^1.53.0",
     "swiper": "^8.3.1"

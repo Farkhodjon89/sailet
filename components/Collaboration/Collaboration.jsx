@@ -3,6 +3,8 @@ import s from './Collaboration.module.scss';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Button from "../Button/Button";
 import Navbar from "../NavigationBar/Navbar";
+import triangle from '../../public/Triangle.svg'
+import Image from 'next/image';
 
 const Collaboration = ({}) => {
 
@@ -11,7 +13,7 @@ const Collaboration = ({}) => {
         <div className="container">
           <div className={s.collaborationContainer}>
             <div className={s.content}>
-              <SectionTitle title={`Collaboration is priceless`}/>
+              <SectionTitle title="Collaboration is priceless"/>
               <p className="text">
                 As a team, we clearly understand that if we want to build something unique like a well-known
                 IRL/Metaverse brand, we have to work with each other and the leaders in the field. We are not alone, and
