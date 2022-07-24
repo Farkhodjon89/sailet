@@ -1,7 +1,7 @@
 .collectiveResponsibility {
   padding: 147px 0 178px 0;
   position: relative;
-  background: url("../../public/responsibilityBg.png") no-repeat center;
+  background: url("../../public/collectiveResponsibilityBg.webp") no-repeat center;
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
@@ -65,7 +65,7 @@
   }
 
   .collectiveResponsibilityContainer {
-    background: url("../../public/responsibilityBackground.png") no-repeat center;
+    background: url("../../public/responsibilityBg.png") no-repeat center;
     z-index: 6;
     position: relative;
     border-radius: 30px;
