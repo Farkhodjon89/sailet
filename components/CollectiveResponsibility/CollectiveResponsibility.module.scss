@@ -88,7 +88,6 @@
         }
 
         .heroImage {
-
           &:hover {
             opacity: 60%;
           }
@@ -124,11 +123,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-
-        }
-
-        .visible {
-          opacity: 1;
+          pointer-events: none;
         }
       }
 

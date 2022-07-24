@@ -10,14 +10,14 @@ import OurPartners from "../components/OurPartners/OurPartners";
 export default function Home() {
 
   return (
-      <div className='wrapper' style={{transform: 'translateY(0px)'}}>
+      <div className='wrapper'>
         <Collaboration/>
         <Kindness/>
         <Creativity/>
         <CollectiveResponsibility/>
         <UpToTheMint/>
         <ElonMusk/>
-        <OurPartners />
+        <OurPartners/>
       </div>
   )
 }
