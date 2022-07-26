@@ -25,6 +25,7 @@ const UpToTheMint = () => {
             nextEl: swiperNavNextRef.current
           }}
           slidesPerView={1}
+          speed={2000}
           loop
           className={s.mySwiper}
           onInit={(swiper) => {
