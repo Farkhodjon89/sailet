@@ -78,7 +78,7 @@
 
 .swiperNavPrevRef {
   background-image: url('../../public/arrowLeft.svg');
-  left: 48%;
+  left: 46%;
   @media (max-width: 767.98px) {
     left: 0;
     position: absolute;
@@ -89,7 +89,7 @@
 
 .swiperNavNextRef {
   background-image: url('../../public/arrowRight.svg');
-  right: 0;
+  right: -2%;
   @media (max-width: 767.98px) {
     right: 0;
     position: absolute;

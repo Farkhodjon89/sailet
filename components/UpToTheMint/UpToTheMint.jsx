@@ -5,6 +5,7 @@ import SwiperCore, {Navigation, Pagination} from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {motion} from "framer-motion";
 import classnames from "classnames";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {rollerData} from "../../rollerData";
@@ -37,7 +38,20 @@ const UpToTheMint = () => {
           <section className={s.upToTheMintNight} id="page5">
             <div className="container">
               <div className={s.upToTheMintContainer}>
-                <SectionTitle title='Up to the mint'/>
+                <motion.div
+                    initial={{
+                      opacity: 0
+                    }}
+                    viewport={{once: false, amount: 0.5}}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        delay: 0.7,
+                      }
+                    }}
+                >
+                  <SectionTitle title='Up to the mint'/>
+                </motion.div>
                 <div className={classnames(s.contentNight, s.contentNightAdditional)}>
                   <ul className={s.contentText}>
                     {rollerData.map(({id, title, text}) => (

@@ -1,6 +1,7 @@
 import React from 'react';
 import {partners} from "../../partners";
 import Image from 'next/image';
+import {motion} from "framer-motion";
 import s from "./OurPartners.module.scss";
 import SwiperCore, {Navigation, Pagination,} from 'swiper'
 import 'swiper/css';
@@ -18,7 +19,20 @@ const OurPartners = () => {
         <div className={s.ellips2}></div>
         <div className={s.ellips3}></div>
         <div className={s.ourPartnersContainer}>
-          <h2 className={s.title}>Our partners</h2>
+          <motion.h2
+              initial={{
+                opacity: 0
+              }}
+              viewport={{once: false, amount: 0.5}}
+              whileInView={{
+                opacity: 1,
+                transition: {
+                  delay: 0.7,
+                }
+              }}
+              className={s.title}>
+            Our partners
+          </motion.h2>
           <Swiper
               slidesPerView={6}
               loop

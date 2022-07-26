@@ -65,11 +65,14 @@
   }
 
   .collectiveResponsibilityContainer {
-    background: url("../../public/responsibilityBg.png") no-repeat center;
+    background: rgba(15, 7, 31, 0.7);
+    backdrop-filter: blur(25px);
     z-index: 6;
     position: relative;
     border-radius: 30px;
     min-height: 100%;
+    transition: all 0.7s ease-in-out;
+
 
     .heroesList {
       display: grid;
@@ -82,6 +85,14 @@
         margin: 0 auto;
         position: relative;
         margin-bottom: 24px;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        transition: all 1s ease;
+
+        &:hover {
+          border: 1px solid white;
+
+        }
 
         &:hover .heroIcon {
           display: block;
@@ -91,6 +102,7 @@
           &:hover {
             opacity: 60%;
           }
+
         }
 
         .heroName {
@@ -128,6 +140,30 @@
       }
 
     }
+  }
+
+  .firstColor {
+    background: #333E78;
+  }
+
+  .secondColor {
+    background: #182128;
+  }
+
+  .thirdColor {
+    background: #451111;
+  }
+
+  .fourthColor {
+    background: #7C0058;
+  }
+
+  .fifthColor {
+    background: #083320;
+  }
+
+  .sixthColor {
+    background: #010005;
   }
 }
 
