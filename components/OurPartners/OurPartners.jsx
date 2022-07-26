@@ -27,7 +27,7 @@ const OurPartners = () => {
               whileInView={{
                 opacity: 1,
                 transition: {
-                  delay: 0.7,
+                  delay: 0.3,
                 }
               }}
               className={s.title}>

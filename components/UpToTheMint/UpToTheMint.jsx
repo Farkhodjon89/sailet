@@ -47,7 +47,7 @@ const UpToTheMint = () => {
                     whileInView={{
                       opacity: 1,
                       transition: {
-                        delay: 0.7,
+                        delay: 0.3,
                       }
                     }}
                 >
@@ -57,11 +57,11 @@ const UpToTheMint = () => {
                     initial={{
                       opacity: 0
                     }}
-                    viewport={{once: false, amount: 0.3}}
+                    viewport={{once: false, amount: 0.2}}
                     whileInView={{
                       opacity: 1,
                       transition: {
-                        delay: 0.7,
+                        delay: 0.1,
                       }
                     }}
                     className={classnames(s.contentNight, s.contentNightAdditional)}
@@ -92,7 +92,7 @@ const UpToTheMint = () => {
                     whileInView={{
                       opacity: 1,
                       transition: {
-                        delay: 0.7,
+                        delay: 0.1,
                       }
                     }}
                     className={classnames(s.contentDay, s.contentDayAdditional)}

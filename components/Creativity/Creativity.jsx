@@ -47,7 +47,7 @@ const Creativity = () => {
                 whileInView={{
                   opacity: 1,
                   transition: {
-                    delay: 0.7,
+                    delay: 0.3,
                   }
                 }}
             >

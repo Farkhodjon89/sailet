@@ -10,7 +10,6 @@ const DragonView = ({id, title, text, img}) => {
 
   return (
         <motion.li
-            key={id}
             initial={{
               opacity: 0
             }}
@@ -18,7 +17,7 @@ const DragonView = ({id, title, text, img}) => {
             whileInView={{
               opacity: 1
             }}
-            transition={{delay: 0.6}}
+            transition={{delay: 0.2}}
             className={/*entered ? classnames(s.dragonItem, s.tabsActive) : */s.dragonItem}>
           <div className={s.itemTop}>
             <div className={s.itemContent}>

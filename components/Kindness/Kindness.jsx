@@ -24,7 +24,7 @@ const Kindness = () => {
                 whileInView={{
                   opacity: 1
                 }}
-                transition={{delay: 0.5}}
+                transition={{delay: 0.2}}
             >
               <div className={s.mainBlock}>
                 <div className={s.dragonImage}>

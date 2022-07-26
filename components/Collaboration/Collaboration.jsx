@@ -19,7 +19,7 @@ const Collaboration = ({}) => {
                     y: -1000
                   }}
                   animate={{y: 0}}
-                  transition={{ ease: "easeOut", duration: 1 }}
+                  transition={{ ease: "easeOut", duration: 0.7 }}
               >
                 <SectionTitle title="Collaboration is priceless"/>
               </motion.div>
@@ -29,8 +29,7 @@ const Collaboration = ({}) => {
                     x: -1000
                   }}
                   animate={{x: 0}}
-                  transition={{ ease: "easeOut", duration: 1 }}
-
+                  transition={{ ease: "easeOut", duration: 0.7 }}
                   className="text">
                 As a team, we clearly understand that if we want to build something unique like a well-known
                 IRL/Metaverse brand, we have to work with each other and the leaders in the field. We are not alone, and
@@ -42,7 +41,7 @@ const Collaboration = ({}) => {
                     y: 1000
                   }}
                   animate={{y: 0}}
-                  transition={{ ease: "easeOut", duration: 1 }}
+                  transition={{ ease: "easeOut", duration: 0.7 }}
               >
                 <Button text="Participate"/>
               </motion.div>
