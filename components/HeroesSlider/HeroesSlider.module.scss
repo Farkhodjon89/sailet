@@ -38,7 +38,7 @@
   background-image: url('../../public/arrowLeft.svg');
   left: 20%;
   @media (max-width: 767.98px) {
-    left: 5%;
+    left: -5%;
 
   }
 }
@@ -47,7 +47,7 @@
   background-image: url('../../public/arrowRight.svg');
   right: 20%;
   @media (max-width: 767.98px) {
-    right: 5%;
+    right: -5%;
 
   }
 }

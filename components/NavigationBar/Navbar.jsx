@@ -26,7 +26,8 @@ const Navbar = () => {
                   opacity: 1,
                   overflowX: 'hidden',
                   transition: {
-                    delay: 0.8
+                    delay: 0.5,
+                    duration: 1
                   }
                 }
               }}>

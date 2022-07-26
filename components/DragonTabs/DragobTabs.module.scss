@@ -96,9 +96,6 @@
     padding: 30px 30px !important;
     position: relative;
 
-    &:nth-child(2) .itemImage {
-      left: 0;
-    }
   }
 
   .dragonTabs {
@@ -106,6 +103,7 @@
   }
 
   .itemImage {
+    display: none !important;
     width: 100px;
     height: 100px;
     position: absolute;

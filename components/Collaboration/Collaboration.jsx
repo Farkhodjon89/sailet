@@ -14,17 +14,39 @@ const Collaboration = ({}) => {
         <div className="container">
           <div className={s.collaborationContainer}>
             <div className={s.content}>
-              <motion.div initial="hidden" animate="visible">
+              <motion.div
+                  initial={{
+                    y: -1000
+                  }}
+                  animate={{y: 0}}
+                  transition={{ ease: "easeOut", duration: 1 }}
+              >
                 <SectionTitle title="Collaboration is priceless"/>
               </motion.div>
 
-              <p className="text">
+              <motion.p
+                  initial={{
+                    x: -1000
+                  }}
+                  animate={{x: 0}}
+                  transition={{ ease: "easeOut", duration: 1 }}
+
+                  className="text">
                 As a team, we clearly understand that if we want to build something unique like a well-known
                 IRL/Metaverse brand, we have to work with each other and the leaders in the field. We are not alone, and
                 we can go even further by collaborating. One of our most vital principles is sustainable and rapid
                 growth. With your participation and help, our opportunities in this field are just infinite
-              </p>
-              <Button text="Participate"/>
+              </motion.p>
+              <motion.div
+                  initial={{
+                    y: 1000
+                  }}
+                  animate={{y: 0}}
+                  transition={{ ease: "easeOut", duration: 1 }}
+              >
+                <Button text="Participate"/>
+              </motion.div>
+
               <Navbar/>
             </div>
           </div>

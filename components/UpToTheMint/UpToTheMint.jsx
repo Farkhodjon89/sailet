@@ -52,7 +52,19 @@ const UpToTheMint = () => {
                 >
                   <SectionTitle title='Up to the mint'/>
                 </motion.div>
-                <div className={classnames(s.contentNight, s.contentNightAdditional)}>
+                <motion.div
+                    initial={{
+                      opacity: 0
+                    }}
+                    viewport={{once: false, amount: 0.3}}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        delay: 0.7,
+                      }
+                    }}
+                    className={classnames(s.contentNight, s.contentNightAdditional)}
+                >
                   <ul className={s.contentText}>
                     {rollerData.map(({id, title, text}) => (
                         <li key={id}>
@@ -61,7 +73,7 @@ const UpToTheMint = () => {
                         </li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
               </div>
             </div>
           </section>
@@ -71,7 +83,19 @@ const UpToTheMint = () => {
             <div className="container">
               <div className={s.upToTheMintContainer}>
                 <SectionTitle title='After mint'/>
-                <div className={classnames(s.contentDay, s.contentDayAdditional)}>
+                <motion.div
+                    initial={{
+                      opacity: 0
+                    }}
+                    viewport={{once: false, amount: 0.2}}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        delay: 0.7,
+                      }
+                    }}
+                    className={classnames(s.contentDay, s.contentDayAdditional)}
+                >
                   <ul className={s.contentText}>
                     {rollerData.map(({id, title, text}) => (
                         <li key={id}>
@@ -80,7 +104,7 @@ const UpToTheMint = () => {
                         </li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
               </div>
             </div>
           </section>
