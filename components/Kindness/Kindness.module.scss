@@ -4,6 +4,7 @@
   padding: 140px 0 200px;
   min-height: 100vh;
   overflow: hidden;
+
   .ellips1 {
     background: rgba(1, 133, 255, 0.9);
     filter: blur(1200px);
@@ -108,7 +109,7 @@
     line-height: 20px !important;
   }
 
-  .mainBlock{
+  .mainBlock {
     padding: 0 0 !important;
   }
 
@@ -118,8 +119,8 @@
 
 }
 
-@media screen  and (max-width: 575.98px) {
-  .dragonImage{
+@media screen and (max-width: 575.98px) {
+  .dragonImage {
     max-width: 200px !important;
 
   }

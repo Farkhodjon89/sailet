@@ -33,6 +33,7 @@ const OurPartners = () => {
               className={s.title}>
             Our partners
           </motion.h2>
+
           <Swiper
               slidesPerView={6}
               loop
@@ -46,6 +47,7 @@ const OurPartners = () => {
                   </div>
                   {/*<div className={s.counter}>{id}</div>*/}
                 </SwiperSlide>
+
             ))}
           </Swiper>
           <PartnersMob partners={partners}/>

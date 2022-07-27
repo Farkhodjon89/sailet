@@ -37,12 +37,8 @@
         line-height: 18px;
         color: #fff;
       }
-      .activeLink{
-        text-transform: uppercase;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 18px;
+      .active{
+        opacity: 1;
         color: #fff;
       }
     }

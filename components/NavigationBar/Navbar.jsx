@@ -4,6 +4,7 @@ import s from './NavBar.module.scss'
 import {data} from "../../navbarData";
 import {Link} from "react-scroll";
 import {motion} from 'framer-motion';
+import classnames from "classnames";
 
 const Navbar = () => {
   const [element, setElement] = useState(null)
@@ -35,8 +36,8 @@ const Navbar = () => {
               <ul className={s.menuList}>
                 {data.map(({id, name, link}) => (
                     <li key={id} className={s.menuItem}>
-                      <Link className={active === id ? s.activeLink : s.menuLink} onClick={() => setActive(id)} to={link}
-                            smooth={true} duration={600}>
+                      <Link activeClass={s.active} className={active === id ? classnames(s.menuLink,s.active)  : s.menuLink}
+                            onClick={() => setActive(id)} to={link} smooth={true} spy={true} duration={600}>
                         {name}
                       </Link>
                     </li>

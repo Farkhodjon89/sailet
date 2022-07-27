@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import s from './Kindness.module.scss';
 import Image from "next/image";
 import Button from "../Button/Button";
