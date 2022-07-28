@@ -25,7 +25,7 @@ const Navbar = () => {
                 visible: {
                   scale: 1,
                   opacity: 1,
-                  overflowX: 'hidden',
+                  // overflowX: 'hidden',
                   transition: {
                     delay: 0.2,
                     duration: 0.5
@@ -36,7 +36,7 @@ const Navbar = () => {
               <ul className={s.menuList}>
                 {data.map(({id, name, link}) => (
                     <li key={id} className={s.menuItem}>
-                      <Link activeClass={s.active} className={active === id ? classnames(s.menuLink,s.active)  : s.menuLink}
+                      <Link activeClass={s.active} className={active === id ? classnames(s.menuLink, s.active) : s.menuLink}
                             onClick={() => setActive(id)} to={link} smooth={true} spy={true} duration={600}>
                         {name}
                       </Link>
