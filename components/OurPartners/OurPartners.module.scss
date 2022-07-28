@@ -3,23 +3,26 @@
   padding: 90px 0 117px 0;
   min-height: 484px;
   backdrop-filter: blur(30px);
+  position: relative;
 
   .ellips1 {
     background: #6201FF;
     filter: blur(1200px);
     width: 850px;
-    height: 850px;
+    height: 420px;
     position: absolute;
+    left: 0;
+    bottom: 0;
   }
 
   .ellips2 {
     background: rgba(174, 1, 255, 0.8);
-    filter: blur(800px);
+    filter: blur(350px);
     width: 610px;
     height: 610px;
     position: absolute;
-    right: -368px;
-    bottom: -240px;
+    right: 0;
+    bottom: 0;
   }
 
 

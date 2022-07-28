@@ -21,6 +21,40 @@
     z-index: 2;
   }
 
+  .ellips1 {
+    background: #AD00FF;
+    opacity: 0.4;
+    filter: blur(300px);
+    width: 600px;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    height: 500px;
+    position: absolute;
+  }
+
+  //.ellips2 {
+  //  background: #AD00FF;
+  //  opacity: 0.4;
+  //  filter: blur(300px);
+  //  width: 610px;
+  //  height: 610px;
+  //  position: absolute;
+  //  right: 0;
+  //  bottom: 0;
+  //}
+
+  .ellips3 {
+    background: #AD00FF;
+    opacity: 0.4;
+    filter: blur(300px);
+    position: absolute;
+    z-index: 88;
+    width: 600px;
+    height: 600px;
+    right: 0;
+    bottom: 0;
+  }
 
 
   .collaborationContainer {
@@ -56,6 +90,18 @@
 }
 
 @media (max-width: 767.98px) {
+  .collaboration {
+    background: url("../../public/0001.gif") no-repeat center !important;
+  }
+
+  .ellips1 {
+    filter: blur(450px) !important;
+  }
+
+  .ellips3{
+    display: none !important;
+  }
+
   .collaborationContainer {
     margin-left: 0 !important;
   }

@@ -57,7 +57,9 @@ const CollectiveResponsibility = () => {
                     <div className={s.heroImage}
                          onClick={() => setActiveCard(id)}
                     >
-                      <Image quality={100} src={img} width={330} height={390} alt="Hero1"/>
+                      <Image quality={100} src={img} width={330}
+                             height={id === 4 || id === 5 || id === 6 ? 450 : 390}
+                             alt="Hero1"/>
                     </div>
                     <div className={s.heroIcon}>
                       <Image src='/eye.svg' width={100} height={50} quality={100} alt='Eye'/>

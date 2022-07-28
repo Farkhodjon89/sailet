@@ -11,6 +11,8 @@
     width: 850px;
     height: 850px;
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .ellips2 {
@@ -19,21 +21,21 @@
     width: 610px;
     height: 610px;
     position: absolute;
-    right: -368px;
-    bottom: -240px;
+    right: 0;
+    bottom: 0;
   }
 
-  .ellips3 {
-    background: #DD76F9;
-    opacity: 0.4;
-    position: absolute;
-    filter: blur(600px);
-    transform: rotate(-46.76deg);
-    width: 772.77px;
-    height: 816.89px;
-    right: -368px;
-    bottom: -240px;
-  }
+  //.ellips3 {
+  //  background: #DD76F9;
+  //  opacity: 0.4;
+  //  position: absolute;
+  //  filter: blur(600px);
+  //  transform: rotate(-46.76deg);
+  //  width: 772.77px;
+  //  height: 816.89px;
+  //  right: -368px;
+  //  bottom: -240px;
+  //}
 
   .elonMuskContainer {
     background: url("../../public/kindnessBackground.webp") no-repeat center;

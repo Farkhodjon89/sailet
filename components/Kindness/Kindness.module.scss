@@ -8,9 +8,11 @@
   .ellips1 {
     background: rgba(1, 133, 255, 0.9);
     filter: blur(1200px);
-    width: 850px;
-    height: 850px;
+    width: 600px;
+    height: 800px;
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .ellips2 {
@@ -19,20 +21,113 @@
     width: 610px;
     height: 610px;
     position: absolute;
-    right: -368px;
-    bottom: -240px;
+    right: 0;
+    bottom: 0;
   }
 
-  .ellips3 {
-    background: #DD76F9;
-    opacity: 0.4;
-    position: absolute;
-    filter: blur(600px);
-    transform: rotate(-46.76deg);
-    width: 772.77px;
-    height: 816.89px;
-    right: -368px;
-    bottom: -240px;
+  //.ellips3 {
+  //  background: #DD76F9;
+  //  opacity: 0.4;
+  //  position: absolute;
+  //  filter: blur(600px);
+  //  //transform: rotate(-46.76deg);
+  //  width: 772.77px;
+  //  height: 816.89px;
+  //  right:0;
+  //  bottom: 0;
+  //}
+
+  .starLeft {
+
+
+    .star1 {
+      width: 20px;
+      position: absolute;
+      left: 130px;
+      z-index: 8;
+      top: 70px;
+      height: 20px;
+      background: url("../../public/stars/firstStar.svg") no-repeat center;
+    }
+
+    .star2 {
+      width: 40px;
+      left: 200px;
+      top: 120px;
+      position: absolute;
+      z-index: 8;
+      height: 40px;
+      background: url("../../public/stars/secondStar.svg") no-repeat center;
+
+    }
+
+    .star3 {
+      width: 18px;
+      position: absolute;
+      top: 180px;
+      left: 110px;
+      height: 18px;
+      z-index: 8;
+      background: url("../../public/stars/thirdStar.svg") no-repeat center;
+    }
+
+    .star4 {
+      width: 14px;
+      height: 14px;
+      top: 230px;
+      left: 200px;
+      z-index: 8;
+      position: absolute;
+      background: url("../../public/stars/fourthStar.svg") no-repeat center;
+    }
+
+    @media (max-width: 991.98px) {
+      display: none;
+
+    }
+  }
+
+  .starRight {
+
+    .star5 {
+      width: 35px;
+      position: absolute;
+      top: 450px;
+      right: 260px;
+      z-index: 8;
+      height: 35px;
+      background: url("../../public/stars/fifthStar.svg") no-repeat center;
+    }
+
+    .star6 {
+      width: 45px;
+      position: absolute;
+      right: 170px;
+      top: 500px;
+      z-index: 8;
+      height: 45px;
+      background: url("../../public/stars/sixthStar.svg") no-repeat center;
+    }
+
+    .star7 {
+      width: 22px;
+      position: absolute;
+      right: 280px;
+      top: 600px;
+      height: 22px;
+      z-index: 8;
+      background: url("../../public/stars/seventhStar.svg") no-repeat center;
+    }
+
+    .star8 {
+      width: 18px;
+      right: 200px;
+      top: 660px;
+      z-index: 8;
+      height: 18px;
+      position: absolute;
+      background: url("../../public/stars/eighthsStar.svg") no-repeat center;
+    }
   }
 
   .kindnessContainer {

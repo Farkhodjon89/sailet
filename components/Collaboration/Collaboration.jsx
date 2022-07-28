@@ -11,6 +11,9 @@ const Collaboration = ({}) => {
 
   return (
       <section className={s.collaboration}>
+        <div className={s.ellips1}></div>
+        <div className={s.ellips2}></div>
+        <div className={s.ellips3}></div>
         <div className="container">
           <div className={s.collaborationContainer}>
             <div className={s.content}>
