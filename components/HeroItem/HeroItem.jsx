@@ -39,7 +39,7 @@ const HeroItem = ({ hero, setHero, img, id, name }) => {
                 desire to be a part of Weya. We will hear out each and everyone
                 who has something to say.{" "}
               </p>
-              <Button text="BY FOR 100$" />
+              {/*<Button text="BY FOR 100$" />*/}
             </div>
           </div>
         </div>,

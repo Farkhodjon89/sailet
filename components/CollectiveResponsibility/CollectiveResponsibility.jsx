@@ -31,7 +31,7 @@ const CollectiveResponsibility = () => {
   const defaultStyle = s.collectiveResponsibilityContainer
 
   return (
-      <section className={s.collectiveResponsibility} id="page4">
+      <section className={colored ? classnames(s.collectiveResponsibility, specificColor) : s.collectiveResponsibility} id="page4">
         <div className={s.ellips1}></div>
         <div className={s.ellips2}></div>
         <div className={s.ellips3}></div>
@@ -50,10 +50,10 @@ const CollectiveResponsibility = () => {
           Collective responsibility
         </motion.h2>
         <div className="container">
-          <div className={classnames(specificColor, defaultStyle)}>
+          <div className={defaultStyle}>
             <ul className={s.heroesList}>
               {heroes.map(({id, name, img}) => (
-                  <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)}>
+                  <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)} onMouseLeave={() => setColored(null)}>
                     <div className={s.heroImage}
                          onClick={() => setActiveCard(id)}
                     >

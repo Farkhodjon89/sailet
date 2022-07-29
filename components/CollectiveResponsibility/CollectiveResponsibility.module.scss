@@ -4,8 +4,8 @@
   background: url("../../public/collectiveResponsibilityBg.webp") no-repeat center;
   background-size: cover;
   min-height: 100vh;
+  transition: all 0.7s ease-in-out !important;
   overflow: hidden;
-
 
   &::before {
     content: '';
@@ -58,18 +58,17 @@
     color: #FFFFFF;
     z-index: 8;
     position: relative;
-    margin-bottom: 90px;
     text-align: center;
 
 
   }
 
   .collectiveResponsibilityContainer {
-    background: rgba(15, 7, 31, 0.7);
-    backdrop-filter: blur(25px);
+    background: none;
+    //backdrop-filter: blur(25px);
     z-index: 6;
     position: relative;
-    border-radius: 30px;
+    //border-radius: 30px;
     min-height: 100%;
     transition: all 0.7s ease-in-out;
 
@@ -100,7 +99,7 @@
 
         .heroImage {
           &:hover {
-            opacity: 60%;
+            opacity: 80%;
           }
 
         }
@@ -142,28 +141,62 @@
     }
   }
 
-  .firstColor {
-    background: #333E78;
-  }
 
-  .secondColor {
-    background: #182128;
-  }
+}
 
-  .thirdColor {
-    background: #451111;
+.firstColor,
+.secondColor,
+.thirdColor,
+.fourthColor,
+.fifthColor,
+.sixthColor {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transition: all 0.7s ease-in-out !important;
   }
+}
 
-  .fourthColor {
-    background: #7C0058;
+.firstColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #343E79 0%, rgba(52, 62, 121, 0.5) 100%);
   }
+}
 
-  .fifthColor {
-    background: #083320;
+.secondColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #18222B 0%, rgba(24, 34, 43, 0.5) 100%);
   }
+}
 
-  .sixthColor {
-    background: #010005;
+.thirdColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #421011 0%, rgba(66, 16, 17, 0.5) 100%);
+  }
+}
+
+.fourthColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #7D0358 0%, rgba(125, 3, 88, 0.5) 100%);
+  }
+}
+
+.fifthColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #143E2A 0%, rgba(20, 62, 42, 0.5) 100%);
+  }
+}
+
+.sixthColor {
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #010103 0%, rgba(1, 1, 3, 0.5) 100%);
   }
 }
 
