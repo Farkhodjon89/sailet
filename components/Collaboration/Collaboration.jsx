@@ -10,6 +10,23 @@ import Image from "next/image";
 const Collaboration = ({}) => {
   return (
       <section className={s.collaboration}>
+        <div className="video-background">
+          <div className="video-foreground">
+            <iframe
+                src="https://www.youtube.com/embed/MmIz9z52FYo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=MmIz9z52FYo"
+                frameBorder="0" allowFullScreen allow="autoplay"></iframe>
+          </div>
+        </div>
+
+        {/*<div className="video-background-mobile">*/}
+        {/*  <div className="video-foreground-mobile">*/}
+        {/*    <iframe*/}
+        {/*        src="https://www.youtube.com/embed/MmIz9z52FYo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=MmIz9z52FYo"*/}
+        {/*        frameBorder="0" allowFullScreen allow="autoplay"></iframe>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+
+
         <div className={s.ellips1}></div>
         <div className={s.ellips2}></div>
         <div className={s.ellips3}></div>
@@ -20,7 +37,7 @@ const Collaboration = ({}) => {
                 animate={{x: 0, y: 0}}
                 transition={{delay: 0.5, duration: 0.5}}
                 href="/" className={s.logo}>
-              weyland
+              weyaland
             </motion.a>
 
             <div className={s.content}>
