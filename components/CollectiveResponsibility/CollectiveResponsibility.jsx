@@ -31,7 +31,8 @@ const CollectiveResponsibility = () => {
   const defaultStyle = s.collectiveResponsibilityContainer
 
   return (
-      <section className={colored ? classnames(s.collectiveResponsibility, specificColor) : s.collectiveResponsibility} id="page4">
+      <section className={colored ? classnames(s.collectiveResponsibility, specificColor) : s.collectiveResponsibility}
+               id="page4">
         <div className={s.ellips1}></div>
         <div className={s.ellips2}></div>
         <div className={s.ellips3}></div>
@@ -53,12 +54,10 @@ const CollectiveResponsibility = () => {
           <div className={defaultStyle}>
             <ul className={s.heroesList}>
               {heroes.map(({id, name, img}) => (
-                  <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)} onMouseLeave={() => setColored(null)}>
-                    <div className={s.heroImage}
-                         onClick={() => setActiveCard(id)}
-                    >
-                      <Image quality={100} src={img} width={330}
-                             height={id === 4 || id === 5 || id === 6 ? 450 : 390}
+                  <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)}
+                      onMouseLeave={() => setColored(null)}>
+                    <div className={s.heroImage} onClick={() => setActiveCard(id)}>
+                      <Image quality={100} src={img} width={330} height={id === 4 || id === 5 || id === 6 ? 450 : 390}
                              alt="Hero1"/>
                     </div>
                     <div className={s.heroIcon}>

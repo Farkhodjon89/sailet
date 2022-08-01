@@ -1,5 +1,5 @@
 .upToTheMintNight {
-  background: url("../../public/deerBackground.webp") no-repeat center;
+  background: url("../../public/deerBackground.svg") no-repeat center;
   padding: 125px 0;
   width: 100%;
   background-size: cover;
@@ -68,7 +68,7 @@
 }
 
 .upToTheMintDay {
-  background: url("../../public/castleBackground.webp") no-repeat center;
+  background: url("../../public/castleBackground.svg") no-repeat center;
   width: 100%;
   padding: 125px 0;
   background-size: cover;
@@ -99,7 +99,7 @@
     .contentDay {
       background: url("../../public/scrollDay.webp") no-repeat center;
       background-size: contain;
-      max-width: 834px;
+      //max-width: 834px;
       height: 1138px;
       z-index: 10;
       width: 100%;

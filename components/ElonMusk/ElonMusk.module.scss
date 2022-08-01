@@ -48,19 +48,45 @@
     .images {
       height: 100%;
       display: flex;
-      align-items: baseline;
-      justify-content: space-evenly;
+      position: relative;
+      //align-items: baseline;
+      //justify-content: space-evenly;
 
       .activeImage {
+        transform: scale(1);
 
       }
+
+      .scaleImage {
+        transform: scale(2);
+        transition: transform 1000ms ease-in-out;
+        position: absolute;
+        left: 15%;
+        bottom: 32%;
+      }
+
 
       .personWrapper {
         display: flex;
 
-        .element:nth-of-type(2) {
-          margin-left: 30px;
+        .element:nth-of-type(2),
+        .element:nth-of-type(3) {
+          //margin-right: 20%;
+          align-self: end;
+
         }
+        .element:nth-of-type(2){
+          position: absolute;
+          left: 50%;
+          bottom: 10%;
+        }
+        .element:nth-of-type(3){
+          position: absolute;
+          left: 75%;
+          bottom: 10%;
+        }
+
+
       }
 
 
@@ -119,13 +145,29 @@
         padding-left: unset !important;
         flex-direction: column !important;
 
-        .info {
+        .scaleImage{
           position: static !important;
+          transform: scale(1) !important;
+        }
+        .personWrapper{
+          flex-direction: column !important;
+          .element:nth-of-type(2){
+            position: static !important;
+          }
+          .element:nth-of-type(3){
+            position: static !important;
+
+          }
+        }
+
+        .info {
+         top: 80%;
         }
 
         .activeImage {
-          width: 300px !important;
-          height: 370px !important;
+
+          width: 300px;
+          height: 370px ;
 
         }
 
@@ -177,9 +219,10 @@
     flex-wrap: wrap !important;
 
 
-    .element {
+    .activeImage {
       width: 130px !important;
       height: 160px !important;
+
     }
 
   }

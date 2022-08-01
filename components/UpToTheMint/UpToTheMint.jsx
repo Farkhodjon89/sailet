@@ -1,8 +1,9 @@
 import React, {useRef} from 'react';
 import s from './UpToTheMint.module.scss'
 import {Swiper, SwiperSlide} from "swiper/react";
-import SwiperCore, {Navigation, Pagination} from 'swiper'
+import SwiperCore, {EffectFade, Navigation, Pagination} from 'swiper'
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {motion} from "framer-motion";
@@ -10,7 +11,7 @@ import classnames from "classnames";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {rollerData} from "../../rollerData";
 
-SwiperCore.use([Pagination, Navigation])
+SwiperCore.use([EffectFade, Pagination, Navigation])
 
 const UpToTheMint = () => {
 
@@ -24,8 +25,9 @@ const UpToTheMint = () => {
             prevEl: swiperNavPrevRef.current,
             nextEl: swiperNavNextRef.current
           }}
+          effect={"fade"}
           slidesPerView={1}
-          speed={1000}
+          speed={1500}
           loop
           className={s.mySwiper}
           onInit={(swiper) => {
