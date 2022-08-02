@@ -4,14 +4,13 @@
   background: url("../../public/collectiveResponsibilityBg.webp") no-repeat center;
   background-size: cover;
   min-height: 100vh;
-  transition: all 1s ease-in;
   overflow: hidden;
-
 
 
   &::before {
     content: '';
-    background: radial-gradient(50% 50% at 50% 50%, #85105F 0%, rgba(133, 16, 95, 0.19) 100%);
+    background-color: rgba(77, 1, 40, 0.5);
+    transition: background-color 1s ease-in-out;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -149,6 +148,7 @@
 .fifthColor,
 .sixthColor {
 
+
   &::before {
     content: '';
     position: absolute;
@@ -159,43 +159,44 @@
     bottom: 0;
     right: 0;
     z-index: 2;
+    transition: background-color 1s ease-in-out;
 
   }
 }
 
 .firstColor {
   &::before {
-    background: radial-gradient(50% 50% at 50% 50%, #343E79 0%, rgba(52, 62, 121, 0.5) 100%);
+    background-color: rgba(0, 102, 221, 0.5);
   }
 }
 
 .secondColor {
   &::before {
-    background: radial-gradient(50% 50% at 50% 50%, #18222B 0%, rgba(24, 34, 43, 0.5) 100%);
+    background-color: rgba(96, 75, 58, 0.5);
   }
 }
 
 .thirdColor {
   &::before {
-    background: radial-gradient(50% 50% at 50% 50%, #421011 0%, rgba(66, 16, 17, 0.5) 100%);
+    background-color: rgba(155, 1, 1, 0.5);
   }
 }
 
 .fourthColor {
   &::before {
-    background: radial-gradient(50% 50% at 50% 50%, #7D0358 0%, rgba(125, 3, 88, 0.5) 100%);
+    background-color: rgba(124, 0, 88, 0.5);
   }
 }
 
 .fifthColor {
   &::before {
-    background: radial-gradient(50% 50% at 50% 50%, #143E2A 0%, rgba(20, 62, 42, 0.5) 100%);
+    background-color: rgba(188, 176, 182, 0.5);
   }
 }
 
 .sixthColor {
   &::before {
-    background-color: rgba(20, 62, 42, 0.5) ;
+    background-color: rgba(0, 100, 0, 0.5);
   }
 }
 
