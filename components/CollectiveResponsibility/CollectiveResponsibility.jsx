@@ -57,7 +57,7 @@ const CollectiveResponsibility = () => {
                   <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)}
                       onMouseLeave={() => setColored(null)}>
                     <div className={s.heroImage} onClick={() => setActiveCard(id)}>
-                      <Image quality={100} src={img} width={330} height={id === 4 || id === 5 || id === 6 ? 450 : 390}
+                      <Image quality={100} src={img} width={330} height={390}
                              alt="Hero1"/>
                     </div>
                     <div className={s.heroIcon}>

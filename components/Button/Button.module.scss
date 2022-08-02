@@ -1,18 +1,18 @@
 .btnContainer {
   display: inline-flex;
   flex-direction: column;
-  width: 217px;
+  width: 200px;
 
   .button {
     background: url("../../public/button.png") no-repeat;
-    height: 75px;
+    height: 65px;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;

@@ -1,12 +1,9 @@
-
-
 @font-face {
   font-family: 'America XIX';
   src: url('../public/fonts/am_xix.otf');
   font-weight: normal;
   font-style: normal;
 }
-
 
 
 html,
@@ -61,37 +58,16 @@ ul li {
 }
 
 
-
-.video-background {
-  //background: #000;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-}
-
-.video-background-mobile {
-  display: none;
-}
-
-
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-
-@media all and (max-width: 500px) {
-  .vid-info .acronym { display: none; }
-}
+//video {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//  z-index: -1;
+//  outline: none;
+//}
 
 
 //@media (min-aspect-ratio: 16/9) {
@@ -123,7 +99,6 @@ ul li {
   margin-left: unset !important;
   margin-right: unset !important;
 }
-
 
 
 .swiper-button-prev::after,
@@ -253,14 +228,19 @@ ul li {
   .video-background-mobile {
     //background: #000;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: -99;
   }
   .video-foreground-mobile,
   .video-background-mobile iframe {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
   }
 

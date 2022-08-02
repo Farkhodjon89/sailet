@@ -7,6 +7,7 @@
 
   .ellips1 {
     background: rgba(1, 133, 255, 0.9);
+    -webkit-filter: blur(1200px);
     filter: blur(1200px);
     width: 850px;
     height: 850px;
@@ -17,6 +18,7 @@
 
   .ellips2 {
     background: rgba(174, 1, 255, 0.8);
+    -webkit-filter: blur(800px);
     filter: blur(800px);
     width: 610px;
     height: 610px;

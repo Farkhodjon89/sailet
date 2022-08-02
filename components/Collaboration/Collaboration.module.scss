@@ -32,16 +32,6 @@
     position: absolute;
   }
 
-  //.ellips2 {
-  //  background: #AD00FF;
-  //  opacity: 0.4;
-  //  filter: blur(300px);
-  //  width: 610px;
-  //  height: 610px;
-  //  position: absolute;
-  //  right: 0;
-  //  bottom: 0;
-  //}
 
   .ellips3 {
     background: #AD00FF;
@@ -56,7 +46,7 @@
   }
 
   .logo {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 72px;
     color: #fff;
@@ -103,7 +93,7 @@
 
       p {
         color: #ffffff;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 23px;
         margin-bottom: 40px;
@@ -133,6 +123,8 @@
   }
 
 }
+
+
 
 @media screen and (max-width: 575.98px) {
   .content {
