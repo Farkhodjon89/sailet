@@ -10,13 +10,30 @@ import Image from "next/image";
 const Collaboration = ({}) => {
   return (
       <>
-        <video poster="">
-          <source src="https://www.youtube.com/watch?v=MmIz9z52FYo" type="video/mp4"/>
-          Тег video не поддерживается вашим раузером.
-        </video>
         <section className={s.collaboration}>
-
-
+          <video
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                zIndex: -1,
+                outline: 'none',
+              }}
+              tabIndex="-1"
+              preload="none"
+              autoPlay
+              muted
+              loop
+              playsInline
+              webkit-playinginline="true"
+              poster=""
+          >
+            <source src={require('../../public/videos/videoplayback.mp4')} type="video/mp4" />
+            Тег video не поддерживается вашим раузером.
+          </video>
           <div className={s.ellips1}></div>
           <div className={s.ellips2}></div>
           <div className={s.ellips3}></div>

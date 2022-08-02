@@ -13,6 +13,7 @@
     "framer-motion": "^6.5.1",
     "lodash": "^4.17.21",
     "next": "12.2.2",
+    "next-videos": "^1.4.0",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-animated-css": "^1.2.1",
