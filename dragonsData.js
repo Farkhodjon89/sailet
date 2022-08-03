@@ -1,7 +1,7 @@
 export const dragonsData = [
   {
     id: 1,
-    title: "Kindness 2",
+    title: "2000 NFTs  2",
     text:
       "Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was\n" +
       "                  uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other\n" +
@@ -11,7 +11,7 @@ export const dragonsData = [
   },
   {
     id: 2,
-    title: "Kindness 3",
+    title: "2000 NFTs  3",
     text:
       "Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was\n" +
       "                  uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other\n" +
@@ -21,7 +21,7 @@ export const dragonsData = [
   },
   {
     id: 3,
-    title: "Kindness 4",
+    title: "2000 NFTs  4",
     text:
       "Kindness was often seen as a weakness. But we don&apos;t think so. Kindness is a fundamental trait that was\n" +
       "                  uniting and shaped humanity throughout the ages. Moreover, kindness is not just helping each other\n" +

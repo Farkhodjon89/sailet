@@ -1,32 +1,32 @@
 export const data = [
   {
     id: 0,
-    name: 'page 2',
+    name: 'Weya Pets',
     link: 'page2'
   },
   {
     id: 1,
-    name: 'page 3',
+    name: 'Our Story',
     link: 'page3'
   },
   {
     id: 2,
-    name: 'page 4',
+    name: 'Weya Genesis',
     link: 'page4'
   },
   {
     id: 3,
-    name: 'page 5',
+    name: 'Roadmap',
     link: 'page5'
   },
   {
     id: 4,
-    name: 'page 6',
+    name: 'Our team',
     link: 'page6'
   },
-  {
-    id: 5,
-    name: 'page 7',
-    link: 'page7'
-  },
+  // {
+  //   id: 5,
+  //   name: 'page 7',
+  //   link: 'page7'
+  // },
 ]

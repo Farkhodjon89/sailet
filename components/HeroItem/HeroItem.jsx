@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import ReactDOM from "react-dom";
 
-const HeroItem = ({hero, setHero, img, id, name}) => {
+const HeroItem = ({hero, setHero, img, id, name, text}) => {
   const [element, setElement] = useState(null);
 
   useEffect(() => {
@@ -25,14 +25,7 @@ const HeroItem = ({hero, setHero, img, id, name}) => {
               </div>
               <div className={s.heroContent}>
                 <h4 className={s.title}>{name}</h4>
-                <p>
-                  Let&apos;s have each other accountable for every success or
-                  failure. We want to build a community where people realize the
-                  real value of their involvement and how important are their
-                  ideas, help and confidence in our success, not to mention the
-                  desire to be a part of Weya. We will hear out each and everyone
-                  who has something to say.{" "}
-                </p>
+                <p>{text}</p>
                 {/*<Button text="BY FOR 100$" />*/}
               </div>
             </div>

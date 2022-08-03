@@ -6,6 +6,7 @@ import DragonTabs from "../DragonTabs/DragonTabs";
 import { dragonsData } from "../../dragonsData";
 import { motion } from "framer-motion";
 import classnames from "classnames";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Kindness = () => {
   return (
@@ -13,6 +14,20 @@ const Kindness = () => {
       <div className={s.ellips1}></div>
       <div className={s.ellips2}></div>
       <div className={s.ellips3}></div>
+      <motion.h2
+          initial={{
+            opacity: 0
+          }}
+          viewport={{once: false, amount: 0.5}}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              delay: 0.2,
+            }
+          }}
+          className={s.title}>
+        Weya Pets
+      </motion.h2>
       <motion.div
         initial={{ opacity: 0 }}
         viewport={{ once: true, amount: 1 }}
@@ -68,7 +83,7 @@ const Kindness = () => {
                 />
               </div>
               <div className={s.dragonAbout}>
-                <h2 className={s.title}>Kindness</h2>
+                <h2 className={s.title}>2000 NFTs</h2>
                 <p className={s.text}>
                   Kindness was often seen as a weakness. But we don&apos;t think
                   so. Kindness is a fundamental trait that was uniting and
@@ -84,6 +99,12 @@ const Kindness = () => {
           </motion.div>
           <DragonTabs dragons={dragonsData} />
         </div>
+      </div>
+      <div className={s.bottomText}>
+        “Our Weya elves have their own spiritual creatures known as Weydus, which were their best friends through the ages”
+      </div>
+      <div className={s.utility}>
+        utility
       </div>
     </section>
   );

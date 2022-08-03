@@ -1,14 +1,13 @@
 import React, {useMemo, useState} from 'react';
 import {heroes} from "../../responsibilityData";
-import Image from 'next/image';
 import s from './CollectiveResponsibility.module.scss'
 import classnames from "classnames";
 import {motion} from "framer-motion";
 import HeroItem from "../HeroItem/HeroItem";
 import HeroesSlider from "../HeroesSlider/HeroesSlider";
+import HeroCard from "../HeroCard/HeroCard";
 
 const CollectiveResponsibility = () => {
-  const [activeCard, setActiveCard] = useState(null)
   const [colored, setColored] = useState(null)
 
   const specificColor = useMemo(() => {
@@ -53,19 +52,8 @@ const CollectiveResponsibility = () => {
         <div className="container">
           <div className={defaultStyle}>
             <ul className={s.heroesList}>
-              {heroes.map(({id, name, img}) => (
-                  <li key={id} className={s.heroItem} onMouseEnter={() => setColored(id)}
-                      onMouseLeave={() => setColored(null)}>
-                    <div className={s.heroImage} onClick={() => setActiveCard(id)}>
-                      <Image quality={100} src={img} width={330} height={390}
-                             alt="Hero1"/>
-                    </div>
-                    <div className={s.heroIcon}>
-                      <Image src='/eye.svg' width={100} height={50} quality={100} alt='Eye'/>
-                    </div>
-                    <div className={s.heroName}>{name}</div>
-                    {activeCard && <HeroItem id={id} name={name} img={img} hero={activeCard} setHero={setActiveCard}/>}
-                  </li>
+              {heroes.map(({id, name, img, text}) => (
+                  <HeroCard key={id} id={id} setColored={setColored} text={text}  name={name} img={img}/>
               ))}
             </ul>
             <HeroesSlider heroes={heroes}/>

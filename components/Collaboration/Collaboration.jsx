@@ -31,7 +31,7 @@ const Collaboration = ({}) => {
               webkit-playinginline="true"
               poster=""
           >
-            <source src={require('../../public/videos/videoplayback.mp4')} type="video/mp4" />
+            <source src={require('../../public/videos/videoplayback.mp4')} type="video/mp4"/>
             Тег video не поддерживается вашим раузером.
           </video>
           <div className={s.ellips1}></div>
@@ -39,14 +39,9 @@ const Collaboration = ({}) => {
           <div className={s.ellips3}></div>
           <div className="container">
             <div className={s.collaborationContainer}>
-              <motion.a
-                  initial={{x: 400, y: 350}}
-                  animate={{x: 0, y: 0}}
-                  transition={{delay: 0.5, duration: 0.5}}
-                  href="/" className={s.logo}>
+              <a href="/" className={s.logo}>
                 weyaland
-              </motion.a>
-
+              </a>
               <div className={s.content}>
                 <motion.div
                     initial={{
@@ -74,15 +69,15 @@ const Collaboration = ({}) => {
                   participation and help, our opportunities in this field are just
                   infinite
                 </motion.p>
-                <motion.div
-                    initial={{
-                      y: 1000,
-                    }}
-                    animate={{y: 0}}
-                    transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}
-                >
-                  <Button text="Participate"/>
-                </motion.div>
+                {/*<motion.div*/}
+                {/*    initial={{*/}
+                {/*      y: 1000,*/}
+                {/*    }}*/}
+                {/*    animate={{y: 0}}*/}
+                {/*    transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}*/}
+                {/*>*/}
+                {/*  <Button text="Participate"/>*/}
+                {/*</motion.div>*/}
 
                 <Navbar/>
               </div>
