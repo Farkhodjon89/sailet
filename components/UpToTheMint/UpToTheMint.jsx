@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import {motion} from "framer-motion";
 import classnames from "classnames";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import {rollerData} from "../../rollerData";
+import {rollerData, rollerData2} from "../../rollerData";
 
 SwiperCore.use([EffectFade, Pagination, Navigation])
 
@@ -71,7 +71,7 @@ const UpToTheMint = () => {
                   <ul className={s.contentText}>
                     {rollerData.map(({id, title, text}) => (
                         <li key={id}>
-                          <h4>{title}</h4>
+                          {/*<h4>{title}</h4>*/}
                           <p>{text}</p>
                         </li>
                     ))}
@@ -100,9 +100,9 @@ const UpToTheMint = () => {
                     className={classnames(s.contentDay, s.contentDayAdditional)}
                 >
                   <ul className={s.contentText}>
-                    {rollerData.map(({id, title, text}) => (
+                    {rollerData2.map(({id, title, text}) => (
                         <li key={id}>
-                          <h4>{title}</h4>
+                          {/*<h4>{title}</h4>*/}
                           <p>{text}</p>
                         </li>
                     ))}
