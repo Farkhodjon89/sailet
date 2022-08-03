@@ -3,16 +3,18 @@ import s from './HeroCard..module.scss';
 import Image from "next/image";
 import HeroItem from "../HeroItem/HeroItem";
 
-const HeroCard = ({ name, img, setColored, id, text, video}) => {
+const HeroCard = ({name, img, setColored, id, text, video, frontImage}) => {
   const [activeCard, setActiveCard] = useState(null)
 
   return (
       <li className={s.card} onMouseEnter={() => setColored(id)}
           onMouseLeave={() => setColored(null)}>
         <div className={s.frontHeroItem}>
-          Weyaland
+          <div className={s.frontHeroImage}>
+            <Image quality={100} src={frontImage} width={330} height={390} alt="Hero1"/>
+          </div>
         </div>
-        <div className={s.heroItem} >
+        <div className={s.heroItem}>
           <div className={s.heroImage} onClick={() => setActiveCard(id)}>
             <Image quality={100} src={img} width={330} height={390}
                    alt="Hero1"/>

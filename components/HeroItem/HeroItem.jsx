@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 import ReactDOM from "react-dom";
 
 const HeroItem = ({hero, setHero, img, id, name, text, video}) => {
-  console.log(video)
+  // console.log(video)
   const [element, setElement] = useState(null);
 
   useEffect(() => {

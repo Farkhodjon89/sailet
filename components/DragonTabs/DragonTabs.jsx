@@ -5,8 +5,8 @@ import DragonView from "../DragonView/DragonView";
 const DragonTabs = ({ dragons }) => {
   return (
     <ul className={s.dragonTabs}>
-      {dragons.map(({ id, title, text, img }) => (
-        <DragonView key={id} id={id} title={title} text={text} img={img} />
+      {dragons.map(({ id, title, text, img, text2, text3 }) => (
+        <DragonView key={id} id={id} title={title} text2={text2} text3={text3} text={text} img={img} />
       ))}
     </ul>
   );

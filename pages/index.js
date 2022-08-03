@@ -11,18 +11,18 @@ import Preloader from "../components/Preloader/Preloader";
 
 export default function Home() {
 
-  const DELAY = 6000;
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsLoading(true), DELAY + 2200);
-  }, []);
+  // const DELAY = 6000;
+  // const [isLoading, setIsLoading] = useState(false);
+  //
+  // useEffect(() => {
+  //   setTimeout(() => setIsLoading(true), DELAY + 2200);
+  // }, []);
 
   return (
       <div className='wrapper'>
-        {!isLoading && <Preloader delay={DELAY}/>}
-        {isLoading && (
-            <>
+        {/*{!isLoading && <Preloader delay={DELAY}/>}*/}
+        {/*{isLoading && (*/}
+        {/*    <>*/}
               <Collaboration/>
               <Kindness/>
               <Creativity/>
@@ -30,8 +30,8 @@ export default function Home() {
               <UpToTheMint/>
               <ElonMusk/>
               <OurPartners/>
-            </>
-        )}
+        {/*    </>*/}
+        {/*)}*/}
       </div>
   )
 }

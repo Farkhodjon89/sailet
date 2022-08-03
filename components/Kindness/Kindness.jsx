@@ -66,7 +66,7 @@ const Kindness = () => {
             initial={{
               opacity: 0,
             }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             whileInView={{
               opacity: 1,
             }}
@@ -92,7 +92,7 @@ const Kindness = () => {
             </div>
           </motion.div>
           <div className={s.utility}>
-            utility
+            utilities
           </div>
           <DragonTabs dragons={dragonsData} />
         </div>

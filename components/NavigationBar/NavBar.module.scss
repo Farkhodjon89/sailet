@@ -39,8 +39,15 @@
         font-weight: 400;
         line-height: 18px;
         color: #fff;
+        transition: all 0.4s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
       }
-      .active{
+
+      .active {
         opacity: 1;
         color: #fff;
       }
