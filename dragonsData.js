@@ -2,9 +2,10 @@ export const dragonsData = [
   {
     id: 1,
     // title: "2000 NFTs  2",
-    text:
-      "1. Whitelist spot for the main Weya Genesis collection (considerable discount)" +
-        "2. Noticeable discount in the merch store (applies for the whole basket)",
+    text: [
+        "1. Whitelist spot for the main Weya Genesis collection (considerable discount)",
+           "2. Noticeable discount in the merch store (applies for the whole basket)",
+    ],
     img: "/hero-images/orandeDragon.png",
   },
   {

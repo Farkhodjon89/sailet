@@ -56,7 +56,7 @@ const Collaboration = ({}) => {
                     animate={{y: 0}}
                     transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}
                 >
-                  <SectionTitle title="Feel yourself at home since Weya is your new home"/>
+                  <h3 className={s.titleContent}>Feel yourself at home since Weya is your new home</h3>
                 </motion.div>
 
                 {/*<motion.p*/}

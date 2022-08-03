@@ -83,7 +83,7 @@ const Kindness = () => {
                 />
               </div>
               <div className={s.dragonAbout}>
-                <h2 className={s.title}>2000 NFTs+</h2>
+                <h2 className={s.title}>2000 NFTs</h2>
                 <p className={s.text}>
                   Our Weya elves have their own spiritual creatures known as Weydus, which were their best friends through the ages
                 </p>

@@ -1,18 +1,21 @@
 .rightMenu {
   position: fixed;
-
+  left: 0;
+  right: 0;
   z-index: 99;
-  top: 5%;
+  top: 4%;
   //transform: rotate(90deg) translate(0, -100%);
 
   .menuList {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     .menuItem {
       position: relative;
 
       &.menuItem {
-        padding: 0 80px 0 80px;
+        padding: 0 50px;
       }
 
       &:not(:last-child)::before {
@@ -32,7 +35,7 @@
         text-transform: uppercase;
         opacity: 60%;
         cursor: pointer;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 18px;
         color: #fff;

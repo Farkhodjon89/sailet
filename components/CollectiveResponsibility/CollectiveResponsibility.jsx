@@ -52,8 +52,8 @@ const CollectiveResponsibility = () => {
         <div className="container">
           <div className={defaultStyle}>
             <ul className={s.heroesList}>
-              {heroes.map(({id, name, img, text}) => (
-                  <HeroCard key={id} id={id} setColored={setColored} text={text}  name={name} img={img}/>
+              {heroes.map(({id, name, img, text, video}) => (
+                  <HeroCard key={id} id={id} setColored={setColored} video={video} text={text}  name={name} img={img}/>
               ))}
             </ul>
             <HeroesSlider heroes={heroes}/>

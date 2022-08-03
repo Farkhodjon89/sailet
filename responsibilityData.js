@@ -1,4 +1,6 @@
+
 export const heroes = [
+
   {
     id: 1,
     text: 'As a team, we clearly understand that if we want to build something unique like a well-known IRL/Metaverse brand, we have to work with each other and the leaders in the field.\n' +
@@ -9,7 +11,8 @@ export const heroes = [
         '\n' +
         'With your participation and help, our opportunities in this field are just infinite.\n',
     name: '𝒞𝑜𝓁𝓁𝒶𝒷𝑜𝓇𝒶𝓉𝒾𝑜𝓃 𝒾𝓈 𝓅𝓇𝒾𝒸𝑒𝓁𝑒𝓈𝓈',
-    img: '/responsibilityImages/hero1.png'
+    img: '/responsibilityImages/hero1.png',
+    video: 'first.mp4'
   },
   {
     id: 2,
@@ -23,7 +26,8 @@ export const heroes = [
         '\n' +
         '𝗜𝘁 𝗶𝘀 𝗼𝗻𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗽𝗶𝗹𝗹𝗮𝗿𝘀 𝘂𝗽𝗼𝗻 𝘄𝗵𝗶𝗰𝗵 𝘄𝗲 𝗮𝗿𝗲 𝗴𝗼𝗶𝗻𝗴 𝘁𝗼 𝗯𝘂𝗶𝗹𝗱 𝗼𝘂𝗿 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆.',
     name: '𝒦𝒾𝓃𝒹𝓃𝑒𝓈𝓈',
-    img: '/responsibilityImages/hero2.png'
+    img: '/responsibilityImages/hero2.png',
+    video: 'second.mp4'
   },
   {
     id: 3,
@@ -37,7 +41,8 @@ export const heroes = [
         '\n' +
         'Let’s become a team to build the biggest brand and let’s make sure to do It as a collective, to do it as a community!\n',
     name: '𝒞𝓇𝑒𝒶𝓉𝒾𝓋𝒾𝓉𝓎 𝒾𝓈 𝒶 𝓀𝑒𝓎 𝓉𝑜 𝓈𝓊𝒸𝒸𝑒𝓈𝓈',
-    img: '/responsibilityImages/hero3.png'
+    img: '/responsibilityImages/hero3.png',
+    video: 'third.mp4'
   },
   {
     id: 4,
@@ -51,7 +56,8 @@ export const heroes = [
         '\n' +
         'We want to build for the bright future, not a one-day triumph!\n',
     name: '𝒬𝓊𝒶𝓁𝒾𝓉𝓎  𝑜𝓋𝑒𝓇 𝓆𝓊𝒶𝓃𝓉𝒾𝓉𝓎',
-    img: '/responsibilityImages/hero4.png'
+    img: '/responsibilityImages/hero4.png',
+    video: 'fourth.mp4'
   },
   {
     id: 5,
@@ -61,7 +67,8 @@ export const heroes = [
         '\n' +
         'We will hear out each and everyone who has something to say.\n',
     name: '𝒞𝑜𝓁𝓁𝑒𝒸𝓉𝒾𝓋𝑒  𝓇𝑒𝓈𝓅𝑜𝓃𝓈𝒾𝒷𝒾𝓁𝒾𝓉𝓎',
-    img: '/responsibilityImages/hero5.png'
+    img: '/responsibilityImages/hero5.png',
+    video: 'fifth.mp4'
   },
   {
     id: 6,
@@ -73,6 +80,7 @@ export const heroes = [
         '\n' +
         'We all have our strengths and weaknesses so let\'s listen to each other, help each other and become better ourselves together.\n',
     name: '𝑅𝑒𝓈𝓅𝑒𝒸𝓉',
-    img: '/responsibilityImages/hero6.png'
+    img: '/responsibilityImages/hero6.png',
+    video: 'sixth.mp4'
   }
 ]
