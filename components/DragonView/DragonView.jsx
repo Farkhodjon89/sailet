@@ -25,7 +25,7 @@ const DragonView = ({ id, title, text, img }) => {
           <h3 className={s.itemTitle}>{title}</h3>
           <div className={s.itemDetails}>
             <p className={s.text}>{text}</p>
-            <Button text="Participate" />
+            {/*<Button text="Participate" />*/}
           </div>
         </div>
         <div className={s.itemImage}>

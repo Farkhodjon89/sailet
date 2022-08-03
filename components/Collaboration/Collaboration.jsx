@@ -39,9 +39,15 @@ const Collaboration = ({}) => {
           {/*<div className={s.ellips3}></div>*/}
           <div className="container">
             <div className={s.collaborationContainer}>
-              <a href="/" className={s.logo}>
+              <motion.a
+                  initial={{
+                    y: -1000,
+                  }}
+                  animate={{y: 0}}
+                  transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}
+                  href="/" className={s.logo}>
                 weyaland
-              </a>
+              </motion.a>
               <div className={s.content}>
                 <motion.div
                     initial={{

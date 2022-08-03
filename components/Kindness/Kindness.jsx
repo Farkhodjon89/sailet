@@ -83,29 +83,24 @@ const Kindness = () => {
                 />
               </div>
               <div className={s.dragonAbout}>
-                <h2 className={s.title}>2000 NFTs</h2>
+                <h2 className={s.title}>2000 NFTs+</h2>
                 <p className={s.text}>
-                  Kindness was often seen as a weakness. But we don&apos;t think
-                  so. Kindness is a fundamental trait that was uniting and
-                  shaped humanity throughout the ages. Moreover, kindness is not
-                  just helping each other like answering questions, guiding
-                  newcomers, and being responsible and proactive. It is
-                  something much bigger, it is a true belief, belief in people
-                  around you, belief in things that others carry about.
+                  Our Weya elves have their own spiritual creatures known as Weydus, which were their best friends through the ages
                 </p>
                 <Button text="Participate" />
               </div>
             </div>
           </motion.div>
+          <div className={s.utility}>
+            utility
+          </div>
           <DragonTabs dragons={dragonsData} />
         </div>
       </div>
-      <div className={s.bottomText}>
-        “Our Weya elves have their own spiritual creatures known as Weydus, which were their best friends through the ages”
-      </div>
-      <div className={s.utility}>
-        utility
-      </div>
+      {/*<div className={s.bottomText}>*/}
+      {/*  “Our Weya elves have their own spiritual creatures known as Weydus, which were their best friends through the ages”*/}
+      {/*</div>*/}
+
     </section>
   );
 };
