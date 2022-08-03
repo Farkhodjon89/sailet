@@ -12,7 +12,7 @@ export const dragonsData = [
     // title: "2000 NFTs  3",
     text:
      '' +
-        ' Fantastically beautiful and very well-made PFP which will have a much higher price on the secondary market, given our rapid growth and expansion of the auditory. \n' +
+        ' 1. Fantastically beautiful and very well-made PFP which will have a much higher price on the secondary market, given our rapid growth and expansion of the auditory. \n' +
         '\n' +
         '\n' +
         '\n' +
