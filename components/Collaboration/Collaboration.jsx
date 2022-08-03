@@ -11,32 +11,32 @@ const Collaboration = ({}) => {
   return (
       <>
         <section className={s.collaboration}>
-          <video
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                zIndex: -1,
-                outline: 'none',
-              }}
-              tabIndex="-1"
-              preload="none"
-              autoPlay
-              muted
-              loop
-              playsInline
-              webkit-playinginline="true"
-              poster=""
-          >
-            <source src={require('../../public/videos/videoplayback.mp4')} type="video/mp4"/>
-            Тег video не поддерживается вашим раузером.
-          </video>
-          <div className={s.ellips1}></div>
-          <div className={s.ellips2}></div>
-          <div className={s.ellips3}></div>
+          {/*<video*/}
+          {/*    style={{*/}
+          {/*      position: 'absolute',*/}
+          {/*      top: 0,*/}
+          {/*      left: 0,*/}
+          {/*      width: '100%',*/}
+          {/*      height: '100%',*/}
+          {/*      objectFit: 'cover',*/}
+          {/*      zIndex: -1,*/}
+          {/*      outline: 'none',*/}
+          {/*    }}*/}
+          {/*    tabIndex="-1"*/}
+          {/*    preload="none"*/}
+          {/*    autoPlay*/}
+          {/*    muted*/}
+          {/*    loop*/}
+          {/*    playsInline*/}
+          {/*    webkit-playinginline="true"*/}
+          {/*    poster=""*/}
+          {/*>*/}
+          {/*  <source src={require('../../public/videos/videoplayback.mp4')} type="video/mp4"/>*/}
+          {/*  Тег video не поддерживается вашим раузером.*/}
+          {/*</video>*/}
+          {/*<div className={s.ellips1}></div>*/}
+          {/*<div className={s.ellips2}></div>*/}
+          {/*<div className={s.ellips3}></div>*/}
           <div className="container">
             <div className={s.collaborationContainer}>
               <a href="/" className={s.logo}>
@@ -50,25 +50,25 @@ const Collaboration = ({}) => {
                     animate={{y: 0}}
                     transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}
                 >
-                  <SectionTitle title="Collaboration is priceless"/>
+                  <SectionTitle title="𝗙𝗲𝗲𝗹 𝘆𝗼𝘂𝗿𝘀𝗲𝗹𝗳 𝗮𝘁 𝗵𝗼𝗺𝗲 𝘀𝗶𝗻𝗰𝗲 𝗪𝗲𝘆𝗮 𝗶𝘀 𝘆𝗼𝘂𝗿 𝗻𝗲𝘄 𝗵𝗼𝗺𝗲"/>
                 </motion.div>
 
-                <motion.p
-                    initial={{
-                      x: -1500,
-                    }}
-                    animate={{x: 0}}
-                    transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}
-                    className="text"
-                >
-                  As a team, we clearly understand that if we want to build
-                  something unique like a well-known IRL/Metaverse brand, we have to
-                  work with each other and the leaders in the field. We are not
-                  alone, and we can go even further by collaborating. One of our
-                  most vital principles is sustainable and rapid growth. With your
-                  participation and help, our opportunities in this field are just
-                  infinite
-                </motion.p>
+                {/*<motion.p*/}
+                {/*    initial={{*/}
+                {/*      x: -1500,*/}
+                {/*    }}*/}
+                {/*    animate={{x: 0}}*/}
+                {/*    transition={{ease: "easeOut", duration: 0.5, delay: 1.1}}*/}
+                {/*    className="text"*/}
+                {/*>*/}
+                {/*  As a team, we clearly understand that if we want to build*/}
+                {/*  something unique like a well-known IRL/Metaverse brand, we have to*/}
+                {/*  work with each other and the leaders in the field. We are not*/}
+                {/*  alone, and we can go even further by collaborating. One of our*/}
+                {/*  most vital principles is sustainable and rapid growth. With your*/}
+                {/*  participation and help, our opportunities in this field are just*/}
+                {/*  infinite*/}
+                {/*</motion.p>*/}
                 {/*<motion.div*/}
                 {/*    initial={{*/}
                 {/*      y: 1000,*/}

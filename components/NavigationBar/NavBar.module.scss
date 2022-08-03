@@ -1,9 +1,9 @@
 .rightMenu {
   position: fixed;
-  right: -13%;
+
   z-index: 99;
-  top: 45%;
-  transform: rotate(90deg) translate(0, -100%);
+  top: 5%;
+  //transform: rotate(90deg) translate(0, -100%);
 
   .menuList {
     display: flex;
@@ -12,7 +12,7 @@
       position: relative;
 
       &:not(:last-child) {
-        padding: 0 30px 0 0;
+        padding: 0 100px 0 100px;
       }
 
       &:not(:last-child)::before {
