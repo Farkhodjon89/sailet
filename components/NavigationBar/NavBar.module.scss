@@ -11,14 +11,14 @@
     .menuItem {
       position: relative;
 
-      &:not(:last-child) {
-        padding: 0 100px 0 100px;
+      &.menuItem {
+        padding: 0 80px 0 80px;
       }
 
       &:not(:last-child)::before {
         content: "";
         position: absolute;
-        left: 60%;
+        left: 80%;
         top: 50%;
         -webkit-transform: translate(50%, -50%);
         -ms-transform: translate(50%, -50%);
