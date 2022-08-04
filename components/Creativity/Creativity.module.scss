@@ -2,7 +2,7 @@
   width: 100%;
   background: url('../../public/блок 3.jpg') no-repeat center;
   background-size: cover;
-  padding: 130px 0 100px 0;
+  padding: 130px 0 130px 0;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -24,9 +24,8 @@
   .creativityContainer {
     z-index: 99;
     position: relative;
-    //margin-top: 5%;
     width: 100%;
-    //margin-left: 67px;
+
 
     .content {
       display: flex;
@@ -35,26 +34,45 @@
 
       .leftSide {
         width: 452px;
-
       }
 
       .rightSide {
-        overflow: hidden;
+        overflow-y: scroll;
         width: calc(100% - 452px - 140px);
         padding: 0 30px;
+        height: 470px;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 10px;
 
-        .mySwiper {
-          width: 100%;
-          position: static !important;
+        &::-webkit-scrollbar {
+          width: 10px;
         }
+
+        &::-webkit-scrollbar-track {
+          background: #f9c4d2;
+          border-radius: 10px;
+
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #35a1b5;
+          border-radius: 10px;
+
+        }
+
+
+        .slideText {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          color: #FFFFFF;
+        }
+
       }
     }
   }
 }
 
-.swiper {
-  position: static !important;
-}
 
 @media (max-width: 991.98px) {
   .content {
@@ -76,46 +94,3 @@
 
 }
 
-.swiperNavPrevRef {
-  background-image: url('../../public/arrowLeft.svg');
-  left: 47%;
-  @media (max-width: 767.98px) {
-    left: 0;
-    position: absolute;
-    top: 80% !important;
-
-  }
-}
-
-.swiperNavNextRef {
-  background-image: url('../../public/arrowRight.svg');
-  right: -1%;
-  @media (max-width: 767.98px) {
-    right: 0;
-    position: absolute;
-    top: 80% !important;
-
-  }
-}
-
-.swiperNavPrevRef,
-.swiperNavNextRef {
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-  width: 54px;
-  height: 54px;
-  z-index: 1;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
-  @media (max-width: 767.98px) {
-    width: 34px;
-    height: 34px;
-
-  }
-
-
-}

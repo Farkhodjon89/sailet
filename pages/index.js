@@ -7,6 +7,7 @@ import UpToTheMint from "../components/UpToTheMint/UpToTheMint";
 import OurPartners from "../components/OurPartners/OurPartners";
 import {useEffect, useState} from "react";
 import Preloader from "../components/Preloader/Preloader";
+import Footer from "../components/Footer/Footer";
 
 
 export default function Home() {
@@ -23,13 +24,14 @@ export default function Home() {
         {/*{!isLoading && <Preloader delay={DELAY}/>}*/}
         {/*{isLoading && (*/}
         {/*    <>*/}
-              <Collaboration/>
-              <Kindness/>
-              <Creativity/>
-              <CollectiveResponsibility/>
-              <UpToTheMint/>
-              <ElonMusk/>
-              <OurPartners/>
+        <Collaboration/>
+        <Kindness/>
+        <Creativity/>
+        <CollectiveResponsibility/>
+        <UpToTheMint/>
+        <ElonMusk/>
+        <OurPartners/>
+        <Footer/>
         {/*    </>*/}
         {/*)}*/}
       </div>

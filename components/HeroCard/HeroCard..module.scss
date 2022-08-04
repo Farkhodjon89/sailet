@@ -1,14 +1,18 @@
-.card {
+.wrapper {
   margin: 0 auto;
   margin-bottom: 24px;
+
+  &:hover .card {
+    transform: rotateY(180deg);
+  }
+}
+
+.card {
   position: relative;
   cursor: pointer;
   transition: all 1.5s ease;
   transform-style: preserve-3d;
 
-  &:hover {
-    transform: rotateY(180deg);
-  }
 
   .frontHeroItem {
     position: relative;
