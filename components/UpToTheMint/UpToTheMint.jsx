@@ -18,6 +18,8 @@ const UpToTheMint = () => {
   const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
 
+  // console.log(swiperNavNextRef)
+
   return (
       <Swiper
           modules={[Navigation]}
@@ -35,6 +37,7 @@ const UpToTheMint = () => {
             swiper.params.navigation.nextEl = swiperNavNextRef.current
             swiper.navigation.init()
             swiper.navigation.update()
+            console.log(swiper)
           }}
       >
         <SwiperSlide>
@@ -68,14 +71,45 @@ const UpToTheMint = () => {
                     }}
                     className={classnames(s.contentNight, s.contentNightAdditional)}
                 >
-                  <ul className={s.contentText}>
+                  <video
+                      style={{
+                        width: '834px',
+                        height: '1100px',
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        borderRadius: '30px',
+                        zIndex: -1,
+                        outline: 'none',
+                      }}
+                      tabIndex="-1"
+                      preload="auto"
+                      autoPlay
+                      muted
+                      playsInline
+                      webkit-playinginline="true"
+                      poster=""
+                  >
+                    <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>
+                    Тег video не поддерживается вашим раузером.
+                  </video>
+                  <motion.ul
+                      initial={{
+                        opacity: 0
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        transition: {
+                          delay: 6,
+                        }
+                      }}
+                      className={s.contentText}>
                     {rollerData.map(({id, title, text}) => (
                         <li key={id}>
                           {/*<h4>{title}</h4>*/}
                           <p>{text}</p>
                         </li>
                     ))}
-                  </ul>
+                  </motion.ul>
                 </motion.div>
               </div>
             </div>
@@ -99,6 +133,27 @@ const UpToTheMint = () => {
                     }}
                     className={classnames(s.contentDay, s.contentDayAdditional)}
                 >
+                  {/*<video*/}
+                  {/*    style={{*/}
+                  {/*      width: '834px',*/}
+                  {/*      height: '1100px',*/}
+                  {/*      objectFit: 'cover',*/}
+                  {/*      position: 'absolute',*/}
+                  {/*      borderRadius: '30px',*/}
+                  {/*      zIndex: -1,*/}
+                  {/*      outline: 'none',*/}
+                  {/*    }}*/}
+                  {/*    tabIndex="-1"*/}
+                  {/*    preload="none"*/}
+                  {/*    autoPlay*/}
+                  {/*    muted*/}
+                  {/*    playsInline*/}
+                  {/*    webkit-playinginline="true"*/}
+                  {/*    poster=""*/}
+                  {/*>*/}
+                  {/*  <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>*/}
+                  {/*  Тег video не поддерживается вашим раузером.*/}
+                  {/*</video>*/}
                   <ul className={s.contentText}>
                     {rollerData2.map(({id, title, text}) => (
                         <li key={id}>
