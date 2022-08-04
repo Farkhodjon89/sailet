@@ -32,9 +32,9 @@ const CollectiveResponsibility = () => {
   return (
       <section className={colored ? classnames(s.collectiveResponsibility, specificColor) : s.collectiveResponsibility}
                id="page4">
-        <div className={s.ellips1}></div>
-        <div className={s.ellips2}></div>
-        <div className={s.ellips3}></div>
+        {/*<div className={s.ellips1}></div>*/}
+        {/*<div className={s.ellips2}></div>*/}
+        {/*<div className={s.ellips3}></div>*/}
         <motion.h2
             initial={{
               opacity: 0

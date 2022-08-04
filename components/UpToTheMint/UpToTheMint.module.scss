@@ -65,6 +65,7 @@
   }
 }
 
+
 .upToTheMintDay {
   background: url("../../public/castleBackground.svg") no-repeat center;
   width: 100%;
@@ -136,28 +137,29 @@
 
   }
 
-  .contentNight{
+  .contentNight {
     background: url("../../public/scrollNightMob.webp") no-repeat center !important;
     min-height: 721px !important;
     margin-top: unset !important;
     height: unset !important;
   }
 
-  .contentDay{
+  .contentDay {
     background: url("../../public/scrollDayMob.webp") no-repeat center !important;
     min-height: 721px !important;
     margin-top: unset !important;
     height: unset !important;
   }
 
-  .contentText{
+  .contentText {
     max-width: 260px !important;
+
     h4 {
       font-size: 16px !important;
       line-height: 16px !important;
     }
 
-    p{
+    p {
       font-size: 10px !important;
 
     }

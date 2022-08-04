@@ -13,9 +13,9 @@ SwiperCore.use([Pagination, Navigation]);
 const OurPartners = () => {
   return (
     <section className={s.ourPartners} id="page7">
-      <div className={s.ellips1}></div>
-      <div className={s.ellips2}></div>
-      <div className={s.ellips3}></div>
+      {/*<div className={s.ellips1}></div>*/}
+      {/*<div className={s.ellips2}></div>*/}
+      {/*<div className={s.ellips3}></div>*/}
       <div className={s.ourPartnersContainer}>
         <motion.h2
           initial={{

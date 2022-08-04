@@ -11,9 +11,9 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 const Kindness = () => {
   return (
     <section className={s.kindness} id="page2">
-      <div className={s.ellips1}></div>
-      <div className={s.ellips2}></div>
-      <div className={s.ellips3}></div>
+      {/*<div className={s.ellips1}></div>*/}
+      {/*<div className={s.ellips2}></div>*/}
+      {/*<div className={s.ellips3}></div>*/}
       <motion.h2
           initial={{
             opacity: 0

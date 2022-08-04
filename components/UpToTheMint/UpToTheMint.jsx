@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import s from './UpToTheMint.module.scss'
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {EffectFade, Navigation, Pagination} from 'swiper'
@@ -14,6 +14,8 @@ import {rollerData, rollerData2} from "../../rollerData";
 SwiperCore.use([EffectFade, Pagination, Navigation])
 
 const UpToTheMint = () => {
+  const [index, setIndex] = useState(0)
+  console.log(index)
 
   const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
@@ -32,12 +34,14 @@ const UpToTheMint = () => {
           speed={1500}
           loop
           className={s.mySwiper}
+          onSlideChange={(props) => setIndex(props.activeIndex === 3 ? 1 : props.activeIndex === 0 ? 2 : props.activeIndex)}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = swiperNavPrevRef.current
             swiper.params.navigation.nextEl = swiperNavNextRef.current
             swiper.navigation.init()
             swiper.navigation.update()
             console.log(swiper)
+
           }}
       >
         <SwiperSlide>
@@ -71,6 +75,7 @@ const UpToTheMint = () => {
                     }}
                     className={classnames(s.contentNight, s.contentNightAdditional)}
                 >
+                  {index === 1 &&
                   <video
                       style={{
                         width: '834px',
@@ -89,17 +94,18 @@ const UpToTheMint = () => {
                       webkit-playinginline="true"
                       poster=""
                   >
-                    <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>
+                    <source src={require(`../../public/videos/scrollNight.webm`)} type="video/webm"/>
                     Тег video не поддерживается вашим раузером.
-                  </video>
+                  </video>}
                   <motion.ul
                       initial={{
                         opacity: 0
                       }}
+                      viewport={{once: false}}
                       whileInView={{
                         opacity: 1,
                         transition: {
-                          delay: 6,
+                          delay: 5.5,
                         }
                       }}
                       className={s.contentText}>
@@ -133,27 +139,28 @@ const UpToTheMint = () => {
                     }}
                     className={classnames(s.contentDay, s.contentDayAdditional)}
                 >
-                  {/*<video*/}
-                  {/*    style={{*/}
-                  {/*      width: '834px',*/}
-                  {/*      height: '1100px',*/}
-                  {/*      objectFit: 'cover',*/}
-                  {/*      position: 'absolute',*/}
-                  {/*      borderRadius: '30px',*/}
-                  {/*      zIndex: -1,*/}
-                  {/*      outline: 'none',*/}
-                  {/*    }}*/}
-                  {/*    tabIndex="-1"*/}
-                  {/*    preload="none"*/}
-                  {/*    autoPlay*/}
-                  {/*    muted*/}
-                  {/*    playsInline*/}
-                  {/*    webkit-playinginline="true"*/}
-                  {/*    poster=""*/}
-                  {/*>*/}
-                  {/*  <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>*/}
-                  {/*  Тег video не поддерживается вашим раузером.*/}
-                  {/*</video>*/}
+                  {index === 2 &&
+                  <video
+                      style={{
+                        width: '834px',
+                        height: '1100px',
+                        objectFit: 'cover',
+                        position: 'absolute',
+                        borderRadius: '30px',
+                        zIndex: -1,
+                        outline: 'none',
+                      }}
+                      tabIndex="-1"
+                      preload="none"
+                      autoPlay
+                      muted
+                      playsInline
+                      webkit-playinginline="true"
+                      poster=""
+                  >
+                    <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>
+                    Тег video не поддерживается вашим раузером.
+                  </video>}
                   <ul className={s.contentText}>
                     {rollerData2.map(({id, title, text}) => (
                         <li key={id}>

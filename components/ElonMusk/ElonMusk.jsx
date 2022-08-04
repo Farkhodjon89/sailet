@@ -64,9 +64,9 @@ const ElonMusk = () => {
 
   return (
       <section className={s.elonMusk} id="page6">
-        <div className={s.ellips1}></div>
-        <div className={s.ellips2}></div>
-        <div className={s.ellips3}></div>
+        {/*<div className={s.ellips1}></div>*/}
+        {/*<div className={s.ellips2}></div>*/}
+        {/*<div className={s.ellips3}></div>*/}
         <div className="container">
           <div className={s.elonMuskContainer}>
             <div className={s.arrowContainer} style={{left: '-3%'}} onClick={() => swap()}>
