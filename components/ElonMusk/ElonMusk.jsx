@@ -31,7 +31,7 @@ const ElonMusk = () => {
               <SwiperSlide className={s.swiperSlide}>
                 <div className={s.content}>
                   <div className={s.image}>
-                    <Image width={400} height={400} src='/ElonMusk/firstjpg.jpg' />
+                    <Image width={400} height={400} src='/ElonMusk/firstjpg.webp' />
                   </div>
                   <div>Elena - Founder & CEO</div>
                 </div>
@@ -40,7 +40,7 @@ const ElonMusk = () => {
               <SwiperSlide className={s.swiperSlide}>
                 <div className={s.content}>
                   <div className={s.image}>
-                    <Image width={400} height={400} src='/ElonMusk/second.jpg' />
+                    <Image width={400} height={400} src='/ElonMusk/second.webp' />
                   </div>
                   <div>Taras - Co-founder & COO</div>
                 </div>
@@ -49,7 +49,7 @@ const ElonMusk = () => {
               <SwiperSlide className={s.swiperSlide}>
                 <div className={s.content}>
                   <div className={s.image}>
-                    <Image width={400} height={400} src='/ElonMusk/third.jpg' />
+                    <Image width={400} height={400} src='/ElonMusk/third.webp' />
                   </div>
                   <div>Daniil - Lead Marketing & Development</div>
                 </div>
@@ -58,7 +58,7 @@ const ElonMusk = () => {
               <SwiperSlide className={s.swiperSlide}>
                 <div className={s.content}>
                   <div className={s.image}>
-                    <Image width={400} height={400} src='/ElonMusk/fourth.jpg' />
+                    <Image width={400} height={400} src='/ElonMusk/fourth.webp' />
                   </div>
                   <div>Many Wayne - 3D Design & Artist</div>
                 </div>

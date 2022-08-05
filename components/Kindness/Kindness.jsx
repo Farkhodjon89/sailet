@@ -7,20 +7,15 @@ import { dragonsData } from "../../dragonsData";
 import { motion } from "framer-motion";
 import classnames from "classnames";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import SwiperCore, {EffectFade, Navigation, Pagination} from "swiper";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import 'swiper/css/navigation';
-import "swiper/css/pagination";
 
 
 
-SwiperCore.use([EffectFade, Pagination, Navigation])
+
+
 
 const Kindness = () => {
 
-  const swiperNavPrevRef = useRef(null)
-  const swiperNavNextRef = useRef(null)
+
 
   return (
     <section className={s.kindness} id="page2">
@@ -89,7 +84,7 @@ const Kindness = () => {
               <div className={s.dragonImage}>
                 <Image
                   alt="Dragon"
-                  src="/hero-images/redDragon.png"
+                  src="/hero-images/redDragon.webp"
                   width={393}
                   height={512}
                   priority
@@ -107,7 +102,7 @@ const Kindness = () => {
           <div className={s.utility}>
             utilities
           </div>
-          <DragonTabs dragons={dragonsData} />
+          <DragonTabs  />
         </div>
       </div>
       {/*<div className={s.bottomText}>*/}
