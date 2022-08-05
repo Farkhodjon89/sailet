@@ -12,12 +12,12 @@ import Footer from "../components/Footer/Footer";
 
 export default function Home() {
 
-  // const DELAY = 6000;
-  // const [isLoading, setIsLoading] = useState(false);
-  //
-  // useEffect(() => {
-  //   setTimeout(() => setIsLoading(true), DELAY + 2200);
-  // }, []);
+  const DELAY = 6000;
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(true), DELAY + 2200);
+  }, []);
 
   return (
       <div className='wrapper'>

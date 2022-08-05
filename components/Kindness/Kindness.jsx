@@ -7,8 +7,21 @@ import { dragonsData } from "../../dragonsData";
 import { motion } from "framer-motion";
 import classnames from "classnames";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import SwiperCore, {EffectFade, Navigation, Pagination} from "swiper";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import 'swiper/css/navigation';
+import "swiper/css/pagination";
+
+
+
+SwiperCore.use([EffectFade, Pagination, Navigation])
 
 const Kindness = () => {
+
+  const swiperNavPrevRef = useRef(null)
+  const swiperNavNextRef = useRef(null)
+
   return (
     <section className={s.kindness} id="page2">
       {/*<div className={s.ellips1}></div>*/}
