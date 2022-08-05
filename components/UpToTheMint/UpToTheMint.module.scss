@@ -134,6 +134,9 @@
     padding: 60px 0 100px 0;
 
   }
+  .video{
+    display: none ;
+  }
 
   .contentNight {
     background: url("../../public/scrollNightMob.webp") no-repeat center !important;
@@ -177,6 +180,7 @@
 .swiperNavNextRef {
   background-image: url('../../public/arrowRight.svg');
   right: 20%;
+  position: relative;
   @media (max-width: 767.98px) {
     right: 0;
 

@@ -29,9 +29,8 @@ const UpToTheMint = () => {
             prevEl: swiperNavPrevRef.current,
             nextEl: swiperNavNextRef.current
           }}
-          effect={"fade"}
           slidesPerView={1}
-          speed={1500}
+          speed={2000}
           loop
           className={s.mySwiper}
           onSlideChange={(props) => setIndex(props.activeIndex === 3 ? 1 : props.activeIndex === 0 ? 2 : props.activeIndex)}
@@ -86,6 +85,7 @@ const UpToTheMint = () => {
                         zIndex: -1,
                         outline: 'none',
                       }}
+                      className={s.video}
                       tabIndex="-1"
                       preload="auto"
                       autoPlay
@@ -105,7 +105,7 @@ const UpToTheMint = () => {
                       whileInView={{
                         opacity: 1,
                         transition: {
-                          delay: 5.5,
+                          delay: index === 1 && 3,
                         }
                       }}
                       className={s.contentText}>
@@ -152,6 +152,7 @@ const UpToTheMint = () => {
                       }}
                       tabIndex="-1"
                       preload="none"
+                      className={s.video}
                       autoPlay
                       muted
                       playsInline
@@ -161,14 +162,25 @@ const UpToTheMint = () => {
                     <source src={require(`../../public/videos/scroll.webm`)} type="video/webm"/>
                     Тег video не поддерживается вашим раузером.
                   </video>}
-                  <ul className={s.contentText}>
+                  <motion.ul
+                      initial={{
+                        opacity: 0
+                      }}
+                      viewport={{once: false}}
+                      whileInView={{
+                        opacity: 1,
+                        transition: {
+                          delay: index === 2 && 3,
+                        }
+                      }}
+                      className={s.contentText}>
                     {rollerData2.map(({id, title, text}) => (
                         <li key={id}>
                           {/*<h4>{title}</h4>*/}
                           <p>{text}</p>
                         </li>
                     ))}
-                  </ul>
+                  </motion.ul>
                 </motion.div>
               </div>
             </div>

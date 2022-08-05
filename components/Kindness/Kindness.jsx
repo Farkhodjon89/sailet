@@ -36,38 +36,38 @@ const Kindness = () => {
           className={s.title}>
         Weya Pets
       </motion.h2>
-      <motion.div
-        initial={{ opacity: 0 }}
-        viewport={{ once: true, amount: 1 }}
-        whileInView={{
-          opacity: 1,
-          transition: {
-            delay: 0.2,
-          },
-        }}
-        className={s.starLeft}
-      >
-        <div className={s.star1}></div>
-        <div className={s.star2}></div>
-        <div className={s.star3}></div>
-        <div className={s.star4}></div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        viewport={{ once: true, amount: 1 }}
-        whileInView={{
-          opacity: 1,
-          transition: {
-            delay: 0.2,
-          },
-        }}
-        className={s.starRight}
-      >
-        <div className={s.star5}></div>
-        <div className={s.star6}></div>
-        <div className={s.star7}></div>
-        <div className={s.star8}></div>
-      </motion.div>
+      {/*<motion.div*/}
+      {/*  initial={{ opacity: 0 }}*/}
+      {/*  viewport={{ once: true, amount: 1 }}*/}
+      {/*  whileInView={{*/}
+      {/*    opacity: 1,*/}
+      {/*    transition: {*/}
+      {/*      delay: 0.2,*/}
+      {/*    },*/}
+      {/*  }}*/}
+      {/*  className={s.starLeft}*/}
+      {/*>*/}
+      {/*  <div className={s.star1}></div>*/}
+      {/*  <div className={s.star2}></div>*/}
+      {/*  <div className={s.star3}></div>*/}
+      {/*  <div className={s.star4}></div>*/}
+      {/*</motion.div>*/}
+      {/*<motion.div*/}
+      {/*  initial={{ opacity: 0 }}*/}
+      {/*  viewport={{ once: true, amount: 1 }}*/}
+      {/*  whileInView={{*/}
+      {/*    opacity: 1,*/}
+      {/*    transition: {*/}
+      {/*      delay: 0.2,*/}
+      {/*    },*/}
+      {/*  }}*/}
+      {/*  className={s.starRight}*/}
+      {/*>*/}
+      {/*  <div className={s.star5}></div>*/}
+      {/*  <div className={s.star6}></div>*/}
+      {/*  <div className={s.star7}></div>*/}
+      {/*  <div className={s.star8}></div>*/}
+      {/*</motion.div>*/}
       <div className="container">
         <div className={s.kindnessContainer}>
           <motion.div
