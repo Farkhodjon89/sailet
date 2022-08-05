@@ -95,9 +95,7 @@ const ElonMusk = () => {
                     <p>{value[0].text}</p>
                   </div>
                 </>
-
             ))}
-
 
           </Swiper>
         </div>
