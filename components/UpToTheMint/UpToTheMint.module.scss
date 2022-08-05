@@ -1,25 +1,25 @@
 .upToTheMintNight {
-  background: url("../../public/deerBackground.svg") no-repeat center;
+  //background: url("../../public/deerBackground.svg") no-repeat center;
   padding: 125px 0;
   width: 100%;
   background-size: cover;
   position: relative;
 
 
-  &::before {
-    content: '';
-    opacity: 20%;
-    backdrop-filter: blur(30px);
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-  }
+  //&::before {
+  //  content: '';
+  //  opacity: 20%;
+  //  backdrop-filter: blur(30px);
+  //  background-color: #000;
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //}
 
   .upToTheMintContainer {
     display: flex;
@@ -30,8 +30,7 @@
 
     .contentNight {
       max-width: 834px;
-      height: 1138px;
-      margin-top: 80px;
+      height: 1250px;
       cursor: pointer;
       z-index: 10;
       width: 100%;
@@ -67,26 +66,26 @@
 
 
 .upToTheMintDay {
-  background: url("../../public/castleBackground.svg") no-repeat center;
+  //background: url("../../public/castleBackground.svg") no-repeat center;
   width: 100%;
   padding: 125px 0;
   background-size: cover;
   position: relative;
 
-  &::before {
-    content: '';
-    opacity: 30%;
-    backdrop-filter: blur(30px);
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-  }
+  //&::before {
+  //  content: '';
+  //  opacity: 30%;
+  //  backdrop-filter: blur(30px);
+  //  background-color: #000;
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //}
 
   .upToTheMintContainer {
     display: flex;
@@ -97,10 +96,9 @@
 
     .contentDay {
       max-width: 834px;
-      height: 1138px;
+      height: 1250px;
       z-index: 10;
       width: 100%;
-      margin-top: 80px;
       cursor: pointer;
       display: flex;
       justify-content: center;

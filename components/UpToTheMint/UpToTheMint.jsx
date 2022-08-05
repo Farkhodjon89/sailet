@@ -79,7 +79,7 @@ const UpToTheMint = () => {
                   <video
                       style={{
                         width: '834px',
-                        height: '1100px',
+                        height: '1250px',
                         objectFit: 'cover',
                         position: 'absolute',
                         borderRadius: '30px',
@@ -143,7 +143,7 @@ const UpToTheMint = () => {
                   <video
                       style={{
                         width: '834px',
-                        height: '1100px',
+                        height: '1250px',
                         objectFit: 'cover',
                         position: 'absolute',
                         borderRadius: '30px',
