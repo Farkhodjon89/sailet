@@ -3,6 +3,17 @@
   position: relative;
   padding: 170px 0 170px 0;
   min-height: 100vh;
+.mySwiper{
+  position: relative;
+  .swiperSlide{
+    display: flex;
+    width: 100%;
+    .swiperImage{
+      width: 50%;
+    }
+  }
+}
+
 
 
   .ellips1 {
@@ -102,28 +113,7 @@
       }
 
 
-      .info {
-        max-width: 450px;
-        position: absolute;
-        right: 10%;
 
-        h4 {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 45px;
-          line-height: 120%;
-          color: #FFFFFF;
-        }
-
-        p {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 120%;
-          color: #FFFFFF;
-
-        }
-      }
 
 
     }
@@ -139,6 +129,29 @@
 
   }
 
+}
+.info {
+  max-width: 450px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+
+  }
 }
 
 @media screen and (max-width: 991.98px) {

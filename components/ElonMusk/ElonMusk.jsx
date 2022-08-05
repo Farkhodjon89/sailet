@@ -2,6 +2,14 @@ import React, {useEffect, useState} from "react";
 import s from "./ElonMusk.module.scss";
 import Image from "next/image";
 import classnames from "classnames";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+import { EffectCoverflow, Pagination } from "swiper";
 
 
 const ElonMusk = () => {
@@ -53,46 +61,45 @@ const ElonMusk = () => {
 
   // console.log(activeImage)
 
-  const swap = (dir = "left") => {
-    const [first, ...rest] = value;
-    const last = value.slice(-1);
-    setValue(
-        dir === "left" ? [...last, ...value.slice(0, -1)] : [...rest, first]
-    );
-    setActiveImage(true)
-  };
+
 
   return (
       <section className={s.elonMusk} id="page6">
-        {/*<div className={s.ellips1}></div>*/}
-        {/*<div className={s.ellips2}></div>*/}
-        {/*<div className={s.ellips3}></div>*/}
         <div className="container">
-          <div className={s.elonMuskContainer}>
-            <div className={s.arrowContainer} style={{left: '-3%'}} onClick={() => swap()}>
-              <Image width={50} height={50} src="/arrowLeft.svg" alt=""/>
-            </div>
-            <div className={s.images}>
-              <ul className={s.personWrapper}>
-                {value.map((filteredImage, index) => (
-                        <li key={filteredImage.id} className={s.element}>
-                          <div className={classnames(index === 0 ? s.scaleImage : s.activeImage)}>
-                            <Image src={filteredImage.image} width={252}
-                                   height={316} quality={100} alt="Active Image"/>
-                          </div>
-                        </li>
-                    ))}
-              </ul>
-              <div className={s.info}>
-                <h4>{value[0].title}</h4>
-                <p>{value[0].age}</p>
-                <p>{value[0].text}</p>
-              </div>
-            </div>
-            <div className={s.arrowContainer} style={{right: '-3%'}} onClick={() => swap("right")}>
-              <Image width={50} height={50} src="/arrowRight.svg" alt=""/>
-            </div>
-          </div>
+          <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+              }}
+              // pagination={true}
+              modules={[EffectCoverflow, Pagination]}
+              className={s.mySwiper}
+          >
+            {value.map(({id, text,image,age,title}) => (
+                <>
+                  <SwiperSlide className={s.swiperSlide}>
+                    <div className={s.swiperImage}>
+                      <Image width={500} height={600} src={image} alt="Team" />
+                    </div>
+                  </SwiperSlide>
+                  <div className={s.info}>
+                    <h4>{value[0].title}</h4>
+                    <p>{value[0].age}</p>
+                    <p>{value[0].text}</p>
+                  </div>
+                </>
+
+            ))}
+
+
+          </Swiper>
         </div>
       </section>
   );
