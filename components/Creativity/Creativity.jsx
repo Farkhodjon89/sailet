@@ -27,7 +27,7 @@ const Creativity = () => {
             </motion.div>
             <div className={s.content}>
               <div className={s.leftSide}>
-                <Image alt='Girl' src='/hero-images/girlHero.png' width={452} height={493} priority/>
+                <Image alt='Girl' src='/hero-images/girlHero.webp' width={452} height={493} priority/>
               </div>
               <div className={s.rightSide}>
                 {texts.map((text, index) => <p key={index} className={s.slideText}>{text}</p>)}
