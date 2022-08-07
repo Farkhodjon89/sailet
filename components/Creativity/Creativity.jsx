@@ -27,7 +27,29 @@ const Creativity = () => {
             </motion.div>
             <div className={s.content}>
               <div className={s.leftSide}>
-                <Image alt='Girl' src='/hero-images/girlHero.webp' width={452} height={493} priority/>
+                {/*<Image alt='Girl' src='/hero-images/girlHero.webp' width={452} height={493} priority/>*/}
+                <video
+                    style={{
+                      width: '100%',
+                      height: '463px',
+                      objectFit: 'cover',
+                      borderRadius: '30px',
+                      cursor: 'pointer',
+                      zIndex: -1,
+                      outline: 'none',
+                    }}
+                    tabIndex="-1"
+                    preload="none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    webkit-playinginline="true"
+                    poster=""
+                >
+                  <source src={require(`../../public/videos/thirdBlock.webm`)} type="video/webm"/>
+                  Тег video не поддерживается вашим раузером.
+                </video>
               </div>
               <div className={s.rightSide}>
                 {texts.map((text, index) => <p key={index} className={s.slideText}>{text}</p>)}

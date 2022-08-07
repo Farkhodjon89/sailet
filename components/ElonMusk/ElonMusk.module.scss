@@ -1,8 +1,11 @@
 .elonMusk {
   //background-color: #000;
   position: relative;
-  padding: 170px 0 170px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  border: 1px solid red;
 
 
   .ellips1 {
@@ -25,6 +28,32 @@
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  .swiperContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mySwiper {
+    width: 450px ;
+    height: 550px ;
+    position: relative;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      //background-color: rgba(0, 0, 0, 0.5);
+      //background-color: #35a1b5;
+      top: 0;
+      border-radius: 30px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //opacity: 0.5;
+      z-index: 1;
+    }
   }
 
   .swiperSlide {
@@ -57,14 +86,13 @@
 }
 
 
-
 @media screen and (max-width: 991.98px) {
   .image {
     flex-direction: column !important;
   }
 
   .elonMusk {
-    padding: 35px 0 35px 0 !important;
+
 
 
     .title {
@@ -72,6 +100,7 @@
       line-height: 36px !important;
 
     }
+
     .text {
       font-size: 14px !important;
       line-height: 14px !important;
@@ -82,18 +111,17 @@
 }
 
 @media (max-width: 767.98px) {
-
   .mySwiper {
-    width: 250px !important;
-    height: 350px !important;
-
+    width: 300px !important;
+    height: 400px !important;
 
     .image {
       width: 250px !important;
       height: 250px !important;
-      margin-bottom: 40px !important;
+      margin-bottom: 30px !important;
     }
   }
+
 
   .title {
     margin-top: 20px !important;
@@ -103,34 +131,9 @@
   }
 
 
-
 }
 
-.swiperContainer {
-  display: flex;
-  justify-content: center;
-}
 
-.mySwiper {
-  width: 450px !important;
-  height: 550px !important;
-  position: relative;
-
-
-  &:before {
-    content: '';
-    position: absolute;
-    //background-color: rgba(0, 0, 0, 0.5);
-    //background-color: #35a1b5;
-    top: 0;
-    border-radius: 30px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    //opacity: 0.5;
-    z-index: 1;
-  }
-}
 
 
 
