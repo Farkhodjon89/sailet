@@ -23,7 +23,7 @@ const Creativity = () => {
                   }
                 }}
             >
-              <SectionTitle title="Creativity is a key to success"/>
+              <SectionTitle title="Weya Genesis - 5000 NFTs"/>
             </motion.div>
             <div className={s.content}>
               <div className={s.leftSide}>
