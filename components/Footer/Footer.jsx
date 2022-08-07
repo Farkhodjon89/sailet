@@ -11,34 +11,34 @@ const Footer = () => {
           <div className={s.footerContainer}>
             <div className={s.leftSide}>
               <span></span>
-              <span>Since 2017 Sailet</span>
+              <span>© Weya Land 2022</span>
             </div>
             <div className={s.rightSide}>
               <div className={s.additionalQuestions}>
-                <p>Additional questions <a className={s.link} href='sales@sailet.pro'> sales@sailet.pro</a></p>
-                <p>For affiliate program questions <a className={s.link} href='info@sailet.pro'> info@sailet.pro</a></p>
+                <p>Additional questions <a className={s.link} href='weyaland@gmail.com'> weyaland@gmail.com</a></p>
+                {/*<p>For affiliate program questions <a className={s.link} href='info@sailet.pro'> info@sailet.pro</a></p>*/}
               </div>
               <ul className={s.socialMedia}>
-                <li>
-                  <Link href=''>
-                    <a><FontAwesomeIcon className={s.icon} icon={faFacebook}/></a>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link href=''>*/}
+                {/*    <a><FontAwesomeIcon className={s.icon} icon={faFacebook}/></a>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
                 <li>
                   <Link href='https://www.instagram.com/weyaland/'>
                     <a><FontAwesomeIcon className={s.icon} icon={faInstagram}/></a>
                   </Link>
                 </li>
-                <li>
-                  <Link href=''>
-                    <a><FontAwesomeIcon className={s.icon} icon={faLinkedin}/></a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href=''>
-                    <a ><FontAwesomeIcon className={s.icon} icon={faTelegram}/></a>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link href=''>*/}
+                {/*    <a><FontAwesomeIcon className={s.icon} icon={faLinkedin}/></a>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*  <Link href=''>*/}
+                {/*    <a ><FontAwesomeIcon className={s.icon} icon={faTelegram}/></a>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
                 <li>
                   <Link href='https://twitter.com/WeyaLand'>
                     <a><FontAwesomeIcon className={s.icon} icon={faTwitter}/></a>

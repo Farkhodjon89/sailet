@@ -8,7 +8,7 @@
   z-index: 8;
 
   .dragonItem {
-    margin: 0 40px 40px 40px ;
+    margin: 0 40px 40px 40px;
     //border: 1px solid #fff;
     cursor: pointer;
     //background: linear-gradient(102.6deg, rgba(255, 255, 255, 0.06) 1.6%, rgba(255, 255, 255, 0.04) 104.49%);
@@ -79,13 +79,21 @@
     padding: 30px 30px !important;
   }
 
-  .itemContent {
 
-    .itemTitle {
-      font-size: 24px !important;
-      line-height: 24px !important;
+  .itemTop {
+    flex-direction: column-reverse !important;
+
+    .itemDetails{
+      margin-top: 30px;
     }
   }
+
+
+  .itemTitle {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
 
   .tabsActive {
     margin: 0 15px 40px 15px !important;
@@ -105,11 +113,11 @@
   }
 
   .itemImage {
-    display: none !important;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0;
+    //display: none !important;
+    width: 200px;
+    height: 200px;
+    //position: absolute;
+    //right: 0;
   }
 
   .tabsActive {
@@ -120,20 +128,24 @@
     line-height: 14px !important;
   }
 }
-.swiperContainer{
+
+.swiperContainer {
   display: flex;
   justify-content: center;
   position: relative;
 }
-.swiperContent{
+
+.swiperContent {
   //width: 400px;
   //height: 400px;
 
 }
-.slide img{
+
+.slide img {
   width: 400px !important;
   height: 400px !important;;
 }
+
 .swiperNavPrevRef {
   background-image: url('../../public/arrowLeft.svg');
   left: 0;
