@@ -25,7 +25,6 @@ const DragonTabs = ({dragons}) => {
                     text={"1. Whitelist spot for the main Weya Genesis collection (considerable discount) with the option to mint 2 pieces in one wallet."}
                     img={'/hero-images/orandeDragon.webp'}/>
         <DragonView id={2}
-
                     text2={'5.Giveaways for Weya Pets holders after the completion of collection sale with prizes such as iPhone, iPad, Sony PlayStation 5, Electric Scooter or money equivalent to these prizes.'}
                     text3={'6.Weya Pets NFT will be an essential piece to claim a free 3D metaverse ready model which will be an ambassador of well-known brands ( We will share more information very soon)'}
                     text={'4. Fantastically beautiful and very well-made PFP which will have a much higher price on the secondary market, given our rapid growth and expansion of the auditory.'}

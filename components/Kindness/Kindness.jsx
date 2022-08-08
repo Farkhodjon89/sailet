@@ -3,19 +3,11 @@ import s from "./Kindness.module.scss";
 import Image from "next/image";
 import Button from "../Button/Button";
 import DragonTabs from "../DragonTabs/DragonTabs";
-import { dragonsData } from "../../dragonsData";
+// import { dragonsData } from "../../dragonsData";
 import { motion } from "framer-motion";
-import classnames from "classnames";
-import SectionTitle from "../SectionTitle/SectionTitle";
-
-
-
-
 
 
 const Kindness = () => {
-
-
 
   return (
     <section className={s.kindness} id="page2">
