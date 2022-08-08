@@ -4,12 +4,10 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import {people} from '../../people';
-
 import {EffectCards} from "swiper";
 
 
 const ElonMusk = () => {
-
 
   return (
       <section className={s.elonMusk} id="page6">

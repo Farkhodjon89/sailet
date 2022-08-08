@@ -2,46 +2,46 @@ export const people = [
   {
     id: 0,
     src: 'first.webp',
-    name: 'Лена'
+    name: 'Elena - Founder & CEO'
   },
   {
     id: 1,
     src: 'second.webp',
-    name: 'Тарас'
+    name: 'Taras - Co-founder & COO'
   },
   {
     id: 2,
     src: 'third.webp',
-    name: 'Даниил'
+    name: 'Daniil - Lead Marketing & Development'
   },
   {
     id: 3,
     src: 'fourth.webp',
-    name: 'Максим'
+    name: 'Maksim - Web Development\n'
   },
   {
     id: 4,
     src: 'fifth.webp',
-    name: 'Влад'
+    name: 'Vlad - Crypto & NFT Analytics'
   },
   {
     id: 5,
     src: 'sixth.webp',
-    name: 'Даниэль'
+    name: 'Daniel - Business & Finance Administration'
   },
   {
     id: 6,
     src: 'seventh.webp',
-    name: 'Christopher.G'
+    name: 'Chris - Community Management'
   },
   {
     id: 7,
     src: 'eighth.webp',
-    name: 'Many Wayne'
+    name: 'Many Wayne - 3D Design & Artist'
   },
   {
     id: 8,
     src: 'ninth.webp',
-    name: 'Никита'
+    name: 'Nikita - Back&Front End Web 3.0  Development'
   },
 ]
