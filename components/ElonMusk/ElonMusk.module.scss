@@ -63,6 +63,14 @@
     background: linear-gradient(180deg, rgba(57, 184, 238, 0.5) 0%, #042442 100%);
     border-radius: 18px;
 
+    &:nth-of-type(3),
+    &:nth-of-type(6),
+    &:nth-of-type(9){
+      .image {
+        transform: translateY(15px);
+      }
+    }
+
     .content {
       display: flex;
       flex-direction: column;
