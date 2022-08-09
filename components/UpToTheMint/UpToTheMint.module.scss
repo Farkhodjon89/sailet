@@ -32,15 +32,19 @@
       max-width: 834px;
       height: 1250px;
       cursor: pointer;
-      z-index: 10;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .contentText {
+        visibility: visible;
+        transition-delay: 5s;
+        -webkit-transition-delay: 5s;
+        -moz-transition-delay: 5s;
         max-width: 465px;
         padding-left: 0;
+        text-shadow: 2px 1px 1px #000;
 
 
         li h4 {
@@ -64,6 +68,13 @@
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.block {
+  visibility: visible;
+}
 
 .upToTheMintDay {
   //background: url("../../public/castleBackground.svg") no-repeat center;
@@ -107,6 +118,11 @@
       .contentText {
         max-width: 465px;
         padding-left: 0;
+        text-shadow: 2px 1px 1px #000;
+        visibility: visible;
+        transition-delay:5s;
+        -webkit-transition-delay: 5s;
+        -moz-transition-delay: 5s;
 
         li h4 {
           font-size: 34px;
@@ -134,8 +150,8 @@
     padding: 60px 0 100px 0;
 
   }
-  .video{
-    display: none ;
+  .video {
+    display: none;
   }
 
   .contentNight {
@@ -150,6 +166,11 @@
     min-height: 721px !important;
     margin-top: unset !important;
     height: unset !important;
+
+    .contentText p {
+      color: #000 !important;
+      text-shadow: none;
+    }
   }
 
   .contentText {
@@ -171,7 +192,7 @@
 .swiperNavPrevRef {
   background-image: url('../../public/arrowLeft.svg');
   left: 20%;
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     left: 0;
 
   }
@@ -181,7 +202,7 @@
   background-image: url('../../public/arrowRight.svg');
   right: 20%;
   position: relative;
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     right: 0;
 
   }

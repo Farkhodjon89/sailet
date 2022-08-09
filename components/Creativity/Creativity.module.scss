@@ -73,8 +73,10 @@
   }
 }
 
-
-@media (max-width: 991.98px) {
+.leftSide::-webkit-media-controls {
+  display:none !important;
+}
+@media (max-width: 1199.98px) {
   .content {
     flex-direction: column;
   }

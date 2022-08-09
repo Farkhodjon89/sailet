@@ -3,7 +3,7 @@
   background-size: cover;
   //padding: 245px 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh + 55vh);
   position: relative;
   overflow: hidden;
 
@@ -58,13 +58,13 @@
     z-index: 8;
     position: relative;
     @media screen and (max-width: 767.98px) {
-      font-size: 50px;
+      font-size: 70px;
 
     }
 
     @media screen and (max-width: 575.98px) {
-      font-size: 35px;
-      line-height: 37px;
+      font-size: 50px;
+      line-height: 50px;
 
     }
   }
@@ -84,7 +84,7 @@
       left: 0;
       transform: translateY(180%);
 
-      .titleContent{
+      .titleContent {
         font-size: 18px;
         font-weight: 400;
         line-height: 42px;
@@ -96,16 +96,9 @@
         margin-bottom: 22px;
 
         @media screen and (max-width: 767.98px) {
-          font-size: 50px;
-
+          font-size: 30px;
         }
 
-        @media screen and (max-width: 575.98px) {
-          font-size: 35px;
-          line-height: 37px;
-          text-align: center;
-
-        }
       }
 
       p {
@@ -119,6 +112,30 @@
 
   }
 }
+
+//*::-webkit-media-controls-panel {
+//
+//  display: none!important;
+//
+//  -webkit-appearance: none;
+//
+//}
+//
+//*::--webkit-media-controls-play-button {
+//
+//  display: none!important;
+//
+//  -webkit-appearance: none;
+//
+//}
+//
+//*::-webkit-media-controls-start-playback-button {
+//
+//  display: none!important;
+//
+//  -webkit-appearance: none;
+//
+//}
 
 @media (max-width: 767.98px) {
   .collaboration {
@@ -144,10 +161,14 @@
 
 @media screen and (max-width: 575.98px) {
   .content {
-
     transform: translateY(100%) !important;
 
-    h3{
+    .titleContent {
+      font-size: 25px !important;
+      text-align: center;
+    }
+
+    h3 {
       margin-top: 80px !important;
     }
 

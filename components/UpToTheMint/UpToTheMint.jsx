@@ -29,6 +29,7 @@ const UpToTheMint = () => {
             prevEl: swiperNavPrevRef.current,
             nextEl: swiperNavNextRef.current
           }}
+          effect={'fade'}
           slidesPerView={1}
           speed={2000}
           loop
@@ -44,7 +45,7 @@ const UpToTheMint = () => {
           }}
       >
         <SwiperSlide>
-          <section className={s.upToTheMintNight} id="page5">
+          <section  className={s.upToTheMintNight} id="page5">
             <div className="container">
               <div className={s.upToTheMintContainer}>
                 <motion.div
@@ -58,6 +59,7 @@ const UpToTheMint = () => {
                         delay: 0.1,
                       }
                     }}
+                    className={index === 2 ? s.hidden : s.block}
                 >
                   <SectionTitle title='Up to the mint'/>
                 </motion.div>
@@ -72,7 +74,7 @@ const UpToTheMint = () => {
                         delay: 0.1,
                       }
                     }}
-                    className={classnames(s.contentNight, s.contentNightAdditional)}
+                    className={index === 2 ? s.hidden : s.contentNight}
                 >
                   {index === 1 &&
                   <video
@@ -105,10 +107,10 @@ const UpToTheMint = () => {
                       whileInView={{
                         opacity: 1,
                         transition: {
-                          delay: index === 1 && 3,
+                          delay: index === 1 && 0.5,
                         }
                       }}
-                      className={s.contentText}>
+                      className={index === 2 ? s.hidden : s.contentText}>
                     {rollerData.map(({id, title, text}) => (
                         <li key={id}>
                           {/*<h4>{title}</h4>*/}
@@ -125,7 +127,22 @@ const UpToTheMint = () => {
           <section className={s.upToTheMintDay}>
             <div className="container">
               <div className={s.upToTheMintContainer}>
-                <SectionTitle title='After mint'/>
+                <motion.div
+                    initial={{
+                      opacity: 0
+                    }}
+                    viewport={{once: false, amount: 0.5}}
+                    whileInView={{
+                      opacity: 1,
+                      transition: {
+                        delay: 0.1,
+                      }
+                    }}
+                    className={index === 1 ? s.hidden : s.block}
+                >
+                  <SectionTitle title='After mint'/>
+                </motion.div>
+
                 <motion.div
                     initial={{
                       opacity: 0
@@ -137,7 +154,7 @@ const UpToTheMint = () => {
                         delay: 0.1,
                       }
                     }}
-                    className={classnames(s.contentDay, s.contentDayAdditional)}
+                    className={index === 1 ? s.hidden : s.contentDay}
                 >
                   {index === 2 &&
                   <video
@@ -170,10 +187,10 @@ const UpToTheMint = () => {
                       whileInView={{
                         opacity: 1,
                         transition: {
-                          delay: index === 2 && 3,
+                          delay: index === 2 && 0.5,
                         }
                       }}
-                      className={s.contentText}>
+                      className={index === 1 ? s.hidden : s.contentText}>
                     {rollerData2.map(({id, title, text}) => (
                         <li key={id}>
                           {/*<h4>{title}</h4>*/}

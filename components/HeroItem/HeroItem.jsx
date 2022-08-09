@@ -47,7 +47,10 @@ const HeroItem = ({hero, setHero, img, id, name, text, video}) => {
               </div>
               <div className={s.heroContent}>
                 <h4 className={s.title}>{name}</h4>
-                <p>{text}</p>
+                {text.map((text) => (
+                    <p>{text}</p>
+                ))}
+
                 {/*<Button text="BY FOR 100$" />*/}
               </div>
             </div>

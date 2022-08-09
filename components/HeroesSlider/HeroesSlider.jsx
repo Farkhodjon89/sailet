@@ -18,7 +18,10 @@ const HeroesSlider = ({heroes}) => {
       <div className={s.swiperWrapper}>
         <Swiper
             modules={[Navigation]}
-            navigation
+            navigation={{
+              prevEl: swiperNavPrevRef.current,
+              nextEl: swiperNavNextRef.current
+            }}
             slidesPerView={1}
             loop
             className={s.mySwiper}
@@ -31,7 +34,10 @@ const HeroesSlider = ({heroes}) => {
         >
           {heroes.map(({id, name, img}) => (
               <SwiperSlide key={id}>
-                <Image quality={100} src={img} width={330} height={390} alt="Heros"/>
+                <div className={s.image}>
+                  <Image quality={100} src={img} width={330} height={390} alt="Heros"/>
+                </div>
+
                 {/*<div className={s.heroName}>{name}</div>*/}
               </SwiperSlide>
           ))}
