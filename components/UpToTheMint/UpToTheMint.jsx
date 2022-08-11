@@ -17,15 +17,9 @@ const UpToTheMint = () => {
   const [index, setIndex] = useState(0)
   console.log(index)
 
-
-  useEffect(() => {
-    setIndex(index)
-  }, [index])
-
   const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
 
-  // console.log(swiperNavNextRef)
 
   return (
       <Swiper
