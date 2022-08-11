@@ -159,6 +159,7 @@
     min-height: 721px !important;
     margin-top: unset !important;
     height: unset !important;
+    min-width: 400px !important;
   }
 
   .contentDay {
@@ -166,6 +167,7 @@
     min-height: 721px !important;
     margin-top: unset !important;
     height: unset !important;
+    min-width: 400px !important;
 
     .contentText p {
       color: #000 !important;
@@ -175,6 +177,10 @@
 
   .contentText {
     max-width: 260px !important;
+    transition-delay:1s !important;
+    -webkit-transition-delay: 1s !important;
+    -moz-transition-delay: 1s !important;
+
 
     h4 {
       font-size: 16px !important;
@@ -183,6 +189,7 @@
 
     p {
       font-size: 10px !important;
+      line-height: 16px !important;
 
     }
   }

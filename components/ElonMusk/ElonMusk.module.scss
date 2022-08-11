@@ -36,8 +36,8 @@
   }
 
   .mySwiper {
-    width: 450px ;
-    height: 550px ;
+    width: 450px;
+    height: 550px;
     position: relative;
 
 
@@ -58,22 +58,25 @@
 
   .swiperSlide {
     display: flex;
-    align-items: center;
+    //align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, rgba(57, 184, 238, 0.5) 0%, #042442 100%);
     border-radius: 18px;
 
-    &:nth-of-type(3),
-    &:nth-of-type(6),
-    &:nth-of-type(9){
-      .image {
-        transform: translateY(15px);
-      }
-    }
+    //&:nth-of-type(1),
+    //&:nth-of-type(3),
+    //&:nth-of-type(6),
+    //&:nth-of-type(9) {
+    //  .image {
+    //    transform: translateY(15px);
+    //  }
+    //}
+
 
     .content {
       display: flex;
       flex-direction: column;
+      margin-top: 20px;
 
       div {
         text-align: center;
@@ -86,7 +89,7 @@
         width: 400px;
         height: 400px;
         //margin-bottom: 80px;
-        margin: 0 auto 80px auto;
+        margin: 0 auto 40px auto;
       }
     }
 
@@ -101,7 +104,6 @@
   }
 
   .elonMusk {
-
 
 
     .title {
@@ -128,6 +130,16 @@
       width: 250px !important;
       height: 250px !important;
       margin-bottom: 30px !important;
+    }
+  }
+  .swiperSlide {
+    //&:nth-of-type(1),
+    &:nth-of-type(3),
+    &:nth-of-type(6),
+    &:nth-of-type(9) {
+      .image {
+        transform: none !important;
+      }
     }
   }
 

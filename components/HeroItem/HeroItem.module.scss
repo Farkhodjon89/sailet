@@ -23,9 +23,25 @@
 
   }
 
+  .heroContainerMob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
   .heroImage {
     width: 48%;
     cursor: pointer;
+  }
+
+  .heroImageMob {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
   }
 
   .heroContent {
@@ -47,6 +63,31 @@
     }
 
 
+  }
+
+  .heroContentMob {
+    width: 100% !important;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    //max-width: 300px;
+
+
+    .title {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
   }
 
 

@@ -96,7 +96,9 @@
         margin-bottom: 22px;
 
         @media screen and (max-width: 767.98px) {
-          font-size: 30px;
+          //font-size: 30px;
+          margin-top: 50px;
+          margin-bottom: 0;
         }
 
       }
@@ -168,9 +170,9 @@
       text-align: center;
     }
 
-    h3 {
-      margin-top: 80px !important;
-    }
+    //h3 {
+    //  margin-top: 80px !important;
+    //}
 
     p {
       font-size: 14px !important;

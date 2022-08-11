@@ -5,6 +5,11 @@
   &:hover .card {
     transform: rotateY(180deg);
   }
+
+  @media (max-width: 1199.98px) {
+    width: 30%;
+
+  }
 }
 
 .card {

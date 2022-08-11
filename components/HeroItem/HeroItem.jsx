@@ -6,7 +6,7 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import ReactDOM from "react-dom";
 
-const HeroItem = ({hero, setHero, img, id, name, text, video}) => {
+const HeroItem = ({hero, setHero, img, id, name, text, video, slider}) => {
   // console.log(video)
   const [element, setElement] = useState(null);
 
@@ -20,13 +20,13 @@ const HeroItem = ({hero, setHero, img, id, name, text, video}) => {
               onClick={() => setHero(null)}
               className={hero === id ? classnames(s.heroModal, s.active) : s.hidden}
           >
-            <div className={s.heroContainer}>
-              <div className={s.heroImage}>
+            <div className={slider !== 'slider' ? s.heroContainer : s.heroContainerMob}>
+              <div className={slider !== 'slider' ? s.heroImage : s.heroImageMob}>
                 {/*<Image quality={100} src={img} width={529} height={572} alt="Hero"/>*/}
                 <video
                     style={{
-                      width: '450px',
-                      height: '500px',
+                      width: slider !== 'slider' ? '450px' : '300px',
+                      height: slider !== 'slider' ? '500px' : '350px',
                       objectFit: 'cover',
                       borderRadius: '30px',
                       zIndex: -1,
@@ -45,7 +45,7 @@ const HeroItem = ({hero, setHero, img, id, name, text, video}) => {
                   Тег video не поддерживается вашим раузером.
                 </video>
               </div>
-              <div className={s.heroContent}>
+              <div className={slider !== 'slider' ? s.heroContent : s.heroContentMob}>
                 <h4 className={s.title}>{name}</h4>
                 {text.map((text) => (
                     <p>{text}</p>

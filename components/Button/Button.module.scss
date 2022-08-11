@@ -66,6 +66,12 @@ $pink-shadow: #79c9ca;
     }
   }
 }
+@media (max-width: 978.98px) {
+  .btnContainer {
+    text-align: center !important;
+  }
+
+}
 
 @media (max-width: 767.98px) {
   .btnContainer {

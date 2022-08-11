@@ -136,6 +136,15 @@
   }
 }
 
+@media (max-width: 1199.98px) {
+  .heroesList {
+    display: flex !important;
+    flex-wrap: wrap;
+
+  }
+
+}
+
 @media (max-width: 991.98px) {
   .heroesList {
     display: none !important;

@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import s from './UpToTheMint.module.scss'
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {EffectFade, Navigation, Pagination} from 'swiper'
@@ -16,6 +16,11 @@ SwiperCore.use([EffectFade, Pagination, Navigation])
 const UpToTheMint = () => {
   const [index, setIndex] = useState(0)
   console.log(index)
+
+
+  useEffect(() => {
+    setIndex(index)
+  }, [index])
 
   const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
@@ -45,7 +50,7 @@ const UpToTheMint = () => {
           }}
       >
         <SwiperSlide>
-          <section  className={s.upToTheMintNight} id="page5">
+          <section className={s.upToTheMintNight} id="page5">
             <div className="container">
               <div className={s.upToTheMintContainer}>
                 <motion.div

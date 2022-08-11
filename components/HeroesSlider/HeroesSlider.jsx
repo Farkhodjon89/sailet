@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import s from './HeroesSlider.module.scss';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Navigation, Pagination} from 'swiper'
@@ -6,10 +6,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
+import HeroItem from "../HeroItem/HeroItem";
 
 SwiperCore.use([Pagination, Navigation])
 
 const HeroesSlider = ({heroes}) => {
+  const [activeCard, setActiveCard] = useState(null)
 
   const swiperNavPrevRef = useRef(null)
   const swiperNavNextRef = useRef(null)
@@ -32,14 +34,16 @@ const HeroesSlider = ({heroes}) => {
               swiper.navigation.update()
             }}
         >
-          {heroes.map(({id, name, img}) => (
+          {heroes.map(({id, name, img, video, text}) => (
               <SwiperSlide key={id}>
-                <div className={s.image}>
+                <div className={s.image} onClick={() => setActiveCard(id)}>
                   <Image quality={100} src={img} width={330} height={390} alt="Heros"/>
                 </div>
-
                 {/*<div className={s.heroName}>{name}</div>*/}
+                {activeCard &&
+                <HeroItem id={id} name={name} slider='slider' video={video} text={text} img={img} hero={activeCard} setHero={setActiveCard}/>}
               </SwiperSlide>
+
           ))}
 
         </Swiper>

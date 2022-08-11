@@ -2,7 +2,8 @@ export const people = [
   {
     id: 0,
     src: 'first.webp',
-    name: 'Elena - Founder & CEO'
+    name: 'Elena - Founder  &  CEO',
+    hidden: 'hidden'
   },
   {
     id: 1,
