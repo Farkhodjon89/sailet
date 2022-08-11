@@ -23,7 +23,7 @@ const DragonTabs = ({dragons}) => {
                     text2={'2.Holders of the Weya Pets collection will receive 0.25 Solana cashback after purchasing at least 1 Weya Genesis NFT'}
                     text3={'3. Noticeable discount in the merch store'}
                     text={"1. Whitelist spot for the main Weya Genesis collection (considerable discount) with the option to mint 2 pieces in one wallet."}
-                    img={'/hero-images/orandeDragon.webp'}/>
+                    img={'/hero-images/orangeDragon.webp'}/>
         <DragonView id={2}
                     text2={'5.Giveaways for Weya Pets holders after the completion of collection sale with prizes such as iPhone, iPad, Sony PlayStation 5, Electric Scooter or money equivalent to these prizes.'}
                     text3={'6.Weya Pets NFT will be an essential piece to claim a free 3D metaverse ready model which will be an ambassador of well-known brands ( We will share more information very soon)'}
