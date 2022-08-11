@@ -58,13 +58,13 @@
     z-index: 8;
     position: relative;
     @media screen and (max-width: 767.98px) {
-      font-size: 70px;
+      font-size: 50px;
 
     }
 
     @media screen and (max-width: 575.98px) {
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 45px;
+      line-height: 40px;
 
     }
   }
@@ -95,7 +95,7 @@
         text-transform: uppercase;
         margin-bottom: 22px;
 
-        @media screen and (max-width: 767.98px) {
+        @media screen and (max-width: 991.98px) {
           //font-size: 30px;
           margin-top: 50px;
           margin-bottom: 0;
@@ -145,6 +145,12 @@
     background-size: cover !important;
 
   }
+  .titleContent{
+    margin-top: 60px !important;
+  }
+  .logo {
+    margin-top: 170px !important;
+  }
 
   .ellips1 {
     filter: blur(450px) !important;
@@ -156,6 +162,8 @@
 
   .collaborationContainer {
     margin-left: 0 !important;
+
+
   }
 
 }
@@ -165,9 +173,11 @@
   .content {
     transform: translateY(100%) !important;
 
+
     .titleContent {
       font-size: 25px !important;
       text-align: center;
+      margin-top: 70px !important;
     }
 
     //h3 {
